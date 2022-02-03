@@ -1,4 +1,4 @@
-.profile-banner{
+.profile-banner {
     background-image: url('banner_placeholder.png');
     margin:0%;
     min-height: 338px;
@@ -11,6 +11,3 @@ body{
     margin:0%;
 }
 
-.profile_image{
-    background-image: url('Profile\ placeholder.png')
-}
