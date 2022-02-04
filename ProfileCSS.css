@@ -54,7 +54,17 @@ main{
     margin-bottom: 5px;
 
 }
-.buyer {
+.title {
     margin-bottom: 30px;
 
 }
+.joined-status {
+    margin-bottom: 10px;
+
+}
+.user-ratings {
+    margin-bottom: 20px;
+
+}
+
+
