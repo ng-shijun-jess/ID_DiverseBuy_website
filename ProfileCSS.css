@@ -28,6 +28,7 @@ main{
     overflow-x:hidden;
     left: 50px;
     padding-top:90px;
+    display: flex;
 
 }
 
@@ -66,5 +67,48 @@ main{
     margin-bottom: 20px;
 
 }
+.address {
+    margin-bottom: 100px;
+
+}
 
 
+button.stamp-btn, button.voucher-btn {
+    border:0;
+    padding:20px;
+    width:100%;
+    margin-bottom: 20px;
+    background-color:#ec691e;
+    outline: auto;
+    outline-style:round;
+    outline-color: #ec691e;
+    
+
+}
+
+.right-side{
+    padding-right:15px;
+    width:100%;
+
+}
+
+
+.badges{
+    margin: 100px 0px;
+    display:flex;
+    list-style-type: none;
+    background-color: #fff;
+    padding: 60px;
+    justify-content: space-between;
+    width:100%;
+    
+}
+.individual-badges{
+    padding-right: 50px;
+}
+
+
+
+.nav {
+    width:100%;
+}
