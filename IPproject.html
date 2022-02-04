@@ -5,22 +5,26 @@
         <link rel="stylesheet" href='ProfileCSS.css' type= 'text/css'>
     </head>
     <body>
-        <div class= 'container'>
+        <header>
             <div class = 'profile-banner'>
-                <div class = 'profile-img'>
-                    <img src = ''>
-                </div>
+            </div>
+            <div class = 'profile-img'>
+                <img src = 'profile_placeholder.png'>
+            </div>
+        </header>
+        <main>
+            <div class= 'container'>
                 <div class ='profile-info'> 
-                    <h3 class = 'username'>Name</h3> 
+                    <h3 class = 'username'>Alan Becker</h3> 
                 </div>
-                <div class = 'title'>
-                    title
+                <div class = 'Buyer'>
+                    Seller
                 </div>
                 <div class = 'joined status'>
                     Joined 2 yrs ago
                 </div>
                 <div class = 'user-ratings'>
-                    <div class = ''>
+                    <h3 class = 'rating'> 4.0/5</h3>
                 </div>
                 <div class = 'address'>
                     <p class = 'state'> Singapore, Singapore
@@ -28,7 +32,85 @@
                 </div>
 
             </div>
-        </div>
+            <div class = 'right-side'>
+                <div class = 'badge-display'>
+                    <h1>Badges</h1>
+                    <div class = 'badges'>
+                        <ul>
+                            <li> </li>
+                            <li> </li>
+                            <li> </li>
+                            <li> </li>
+                            <li> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = 'nav'>
+                    <ul>
+                        <li onclick = 'tabs(0)' class = 'user-listings'>
+
+                        </li>
+                        <li onclick = 'tabs(1)' class = 'user-reviews'>
+
+                        </li>
+                        <li onclick = 'tabs(2)' class = 'user-about'>
+
+                        </li>
+                        <li onclick = 'tabs(3)'class = 'user-favourite sellers'>
+
+                        </li>
+                        <li onclick = 'tabs(4)'class = 'user-streams'>
+
+                        </li>
+                        <li onclick = 'tabs(5)'class = 'user-orders'>
+                            
+                        </li>
+                    </ul>
+
+                </div>
+                <div class = 'profile-body'>
+                    <div class = 'profile-listings tab'>
+                        <h1>Listings</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    <div class = 'profile-reviews tab'>
+                        <h1>Reviews</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    <div class = 'profile-about tab'>
+                        <h1>About</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    <div class = 'profile-favourite-sellers tab'>
+                        <h1>Favourit sellers</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    <div class = 'profile-streams tab'>
+                        <h1>Streams</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    <div class = 'profile-orders tab'>
+                        <h1>Orders</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+
+
         <script src = ''></script>
     </body>
 </html>
