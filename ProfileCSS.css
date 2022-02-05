@@ -82,19 +82,20 @@ button.stamp-btn, button.voucher-btn {
     outline: auto;
     outline-style:round;
     outline-color: #ec691e;
+    margin-right: 10px;
     
 
 }
 
 .right-side{
-    padding-right:15px;
     width:100%;
+    margin-left: 100px;
 
 }
 
 
 .badges{
-    margin: 100px 0px;
+    margin: 10px 0px;
     display:flex;
     list-style-type: none;
     background-color: #fff;
@@ -111,4 +112,12 @@ button.stamp-btn, button.voucher-btn {
 
 .nav {
     width:100%;
+    z-index: -1;
+}
+.nav ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    height:
+    
 }
