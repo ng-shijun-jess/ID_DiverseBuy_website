@@ -78,15 +78,21 @@ button.stamp-btn, button.voucher-btn {
     padding:20px;
     width:100%;
     margin-bottom: 20px;
-    background-color:#ec691e;
+    background:#ec691e;
     outline: auto;
     outline-style:round;
     outline-color: #ec691e;
     margin-right: 10px;
-    
+    cursor: pointer;
+
+
 
 }
+button.stamp-btn:hover, button.voucher-btn:hover {
+    background: rgb(236,105,30, 0.9);
 
+
+}
 .right-side{
     width:100%;
     margin-left: 100px;
@@ -109,11 +115,10 @@ button.stamp-btn, button.voucher-btn {
 }
 
 
-
 .nav {
     width:100%;
     z-index: -1;
-    margin: 20px 0px ;
+    margin-top: 20px;
 }
 .nav ul{
     display:flex;
@@ -124,13 +129,20 @@ button.stamp-btn, button.voucher-btn {
 .nav ul li {
     padding:10px;
     width: 100%;
+    cursor:pointer;
     margin:20px;
     font-size: larger;
-    cursor:pointer;
     text-align: center;
     transition: all .2s ease-in-out;
 }
 
-.nav ul li.active,.nav ul li:hover {
-    box-shadow: 0px -10px 0px rgb(236,105,30) inset;
+.nav ul li.active,
+.nav ul li:hover {
+    box-shadow: 0px -3px 0px rgb(236,105,30) inset;
 }
+
+.profile-body{
+    width:100%;
+    z-index: -1;
+}
+
