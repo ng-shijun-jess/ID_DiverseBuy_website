@@ -73,7 +73,7 @@ main{
 }
 
 
-button.stamp-btn, button.voucher-btn {
+button.quest-btn, button.voucher-btn {
     border:0;
     padding:20px;
     width:100%;
@@ -84,6 +84,7 @@ button.stamp-btn, button.voucher-btn {
     outline-color: #ec691e;
     margin-right: 10px;
     cursor: pointer;
+    color: white;
 
 
 
@@ -105,13 +106,14 @@ button.stamp-btn:hover, button.voucher-btn:hover {
     display:flex;
     list-style-type: none;
     background-color: #fff;
-    padding: 60px;
+    padding:0;
     justify-content: space-between;
     width:100%;
     
 }
-.individual-badges{
-    padding-right: 50px;
+.badges li img{
+    height:200px;
+
 }
 
 
@@ -145,4 +147,3 @@ button.stamp-btn:hover, button.voucher-btn:hover {
     width:100%;
     z-index: -1;
 }
-
