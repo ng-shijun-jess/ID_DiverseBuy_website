@@ -8,6 +8,14 @@
     background-repeat: no-repeat;
 
 }
+
+div.profile-banner:hover {
+    opacity: 50%;
+    cursor:pointer;
+
+}
+
+
 * {
     padding:0;
     margin:0;
@@ -41,14 +49,15 @@ main{
     position:absolute;
     left: 70px;
     top: 230px;
+    cursor:pointer;
 
 }
 
 .profile-info {
     flex-direction:column;
     padding-top: 60px;
-    width: 300px;
-    padding: 90px 0px 20px;
+    width: 250px;
+    padding: 90px 0px;
 }
 
 .profile-info h1{
@@ -151,15 +160,27 @@ button.stamp-btn:hover, button.voucher-btn:hover {
 .product {
     height: 343px;
     width: 244px;
-    margin: 30px 0px;
-    background: rgb(59, 59, 59);
+    background: #fff;
+    cursor:pointer;
 
 }
-.product2 {
+.product2{
     height: 343px;
     width: 244px;
-    margin: 30px 0px;
-    background: rgb(59, 59, 59);
+    background:#fff;
+    cursor:pointer;
+}
+.product3 {
+    height: 343px;
+    width: 244px;
+    background:#fff;
+    cursor:pointer;
+}
+.product4 {
+    height: 343px;
+    width: 244px;
+    background:#fff;
+    cursor:pointer;
 }
 .product img {
     height:215px;
@@ -175,7 +196,24 @@ button.stamp-btn:hover, button.voucher-btn:hover {
 
 
 }
+.product3 img {
+    height:215px;
+    width:219px;
+    margin:18px 10px 0px 10px;
+
+
+}
+.product4 img {
+    height:215px;
+    width:219px;
+    margin:18px 10px 0px 10px;
+
+
+}
 .product-list{
     display:flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    width:100%;
 }
 
