@@ -3,6 +3,7 @@
     <head>
         <title>DiverseBuy Profile Page</title>
         <link rel="stylesheet" href='ProfileCSS.css' type= 'text/css'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
@@ -55,9 +56,9 @@
                         <li onclick = "tabs(0)" class = 'user-listings active'> Listings</li>
                         <li onclick = "tabs(1)" class = 'user-reviews'> Reviews</li>
                         <li onclick = "tabs(2)" class = 'user-about'> About</li>
-                        <li onclick = "tabs(3)" class = 'user-favourite sellers'> Favourite Sellers</li>
-                        <li onclick = "tabs(4)" class = 'user-streams'> Streams</li>
-                        <li onclick = "tabs(5)" class = 'user-orders'> Orders</li>
+                        <li onclick = "tabs(3)" class = 'user-streams'> Streams</li>
+                        <li onclick = "tabs(4)" class = 'user-orders'> Orders</li>
+                        <li onclick = "tabs(5)" class = 'user-saved-products'> Saved Products</li>
                     </ul>
 
                 </div>
@@ -80,12 +81,6 @@
 
                         </p>
                     </div>
-                    <div class = 'profile-favourite-sellers tab'>
-                        <h1>Favourite sellers</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
-
-                        </p>
-                    </div>
                     <div class = 'profile-streams tab'>
                         <h1>Streams</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
@@ -93,7 +88,13 @@
                         </p>
                     </div>
                     <div class = 'profile-orders tab'>
-                        <h1>Orders</h1>
+                        <h1>Order</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
+
+                        </p>
+                    </div>
+                    <div class = 'profile-saved-products tab'>
+                        <h1>Saved Products</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias libero quasi quis aspernatur soluta. Delectus deleniti excepturi dolorum deserunt officia ratione cupiditate ab mollitia? Amet hic culpa adipisci, non natus, autem magni nesciunt perferendis mollitia officiis totam, reiciendis numquam nihil distinctio sint debitis? Incidunt aliquam atque totam hic itaque quae doloremque dolore, fuga alias dolorum facere animi nesciunt omnis blanditiis nulla vero voluptate, debitis dolorem dignissimos aliquid odit. Deserunt, doloribus?
 
                         </p>
@@ -102,6 +103,7 @@
                 </div>
             </div>
         </main>
+    
 
         <script src = 'IPjs.js'></script>
     </body>
