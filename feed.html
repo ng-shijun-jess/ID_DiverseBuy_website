@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Feed</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='navbar.css'>
+
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- Half Star link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- Full star link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Container that wraps around all code -->
+    <div class="container">
+        <!-- Nav Bar -->
+        <nav>
+            <ul class="logo-search-filter">
+                <li>
+                    <a href="#">
+                        <div class="logo">
+                            <img src="images/diversebuy_logo.png" id="logo">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <!-- Code for Search Bar -->
+                    <a href="#">
+                        <div class="input-wrapper">
+                            <div class="fa fa-search"></div>
+                            <input type="text" placeholder="Search" />
+                            <div class="fa fa-times"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <!-- Code for Search Filter (Not Clicked) -->
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/filter_null.png" class="filterNull_icon">
+                            <img src="images/filter_coloured.png" class="filterOn_icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="ul-icon">
+                <!-- Code for Sell Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/sell_null.png" class="sellNull_icon">
+                            <img src="images/sell_coloured.png" class="sellOn_icon">
+                        </div>
+                        <div class="name"> Sell </div>
+                    </a>
+                </li>
+                <!-- Code for Live Icon (Not Clicked) -->
+                <!-- <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/live_null.png" class="liveNull_icon">
+                            <img src="images/live_coloured.png" class="liveOn_icon">
+                        </div>
+                        <div class="name"> Live </div>
+                    </a>
+                </li> -->
+                <!-- Code for Rewards Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/rewards_null.png" class="rewardsNull_icon">
+                            <img src="images/rewards_coloured.png" class="rewardsOn_icon">
+                        </div>
+                        <div class="name"> Rewards </div>
+                    </a>
+                </li>
+                <!-- Code for Quest Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/quest_null.png" class="questNull_icon">
+                            <img src="images/quest_coloured.png" class="questOn_icon">
+                        </div>
+                        <div class="name"> Quest </div>
+                    </a>
+                </li>
+                <!-- Code for Chat Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/chat_null.png" class="chatNull_icon">
+                            <img src="images/chat_coloured.png" class="chatOn_icon">
+                        </div>
+                        <div class="name"> Chat </div>
+                    </a>
+                </li>
+                <!-- Code for Cart Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/cart_null.png" class="cartNull_icon">
+                            <img src="images/cart_coloured.png" class="cartOn_icon">
+                        </div>
+                        <div class="name"> Cart </div>
+                    </a>
+                </li>
+                <!-- Code for Profile Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/profile_null.png" class="profileNull_icon">
+                            <img src="images/profile_coloured.png" class="profileOn_icon">
+                        </div>
+                        <div class="name"> Profile </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- End of Nav Bar code -->
+
+        <!-- Code for Announcements, claw machine, vouchers, order tracker, featured streams-->
+        <div class="top_container">
+            
+
+        </div>
+
+        <!--  Code for promotions section -->
+        <!-- promotion Container wraps around all 8 large boxes -->
+        <div class="promotion_container">
+            <div class="promotion_box" id="promotion_toprow"> <!-- Box storing the image -->
+                <img src="images/stickertape.png" class="stickertape"> <!-- Product Image -->
+
+                <!-- Text Box below image -->
+                <div class="promobox_text">
+                    <!-- First row of text consisting of like icon and like count -->
+                    <div class="promobox_row1">
+                        <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                        <div class="heartnumber"> 13 </div> <!-- like count -->
+                    </div>
+                    <p class="promobox_title"> 5cm wide decorative sticker tape </p>    <!-- Title -->
+                    <p class="promobox_price"> $1.35 </p>   <!-- Price -->
+                    <div class="promobox_rating">   <!-- Rating icons -->
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="promobox_rating_text"> 5.0/5.0 </p>   <!-- Rating Text -->
+                    <p class="promobox_country"> Singapore </p> <!-- Country -->
+                </div>
+            </div>
+            <div class="promotion_box" id="promotion_toprow"> box2 </div>
+            <div class="promotion_box" id="promotion_toprow"> box3 </div>
+            <div class="promotion_box" id="promotion_toprow"> box4 </div>
+            <div class="promotion_box" id="promotion_bottomrow"> box5 </div>
+            <div class="promotion_box" id="promotion_bottomrow"> box6 </div>
+            <div class="promotion_box" id="promotion_bottomrow"> box7 </div>
+            <div class="promotion_box" id="promotion_bottomrow"> box8 </div>
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
