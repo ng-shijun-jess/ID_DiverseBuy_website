@@ -1,5 +1,5 @@
 .profile-banner {
-    padding: 0;
+    padding: 150px;
     background-image: url('banner_placeholder.png');
     margin:0%;
     min-height: 338px;
@@ -79,7 +79,7 @@ main{
 }
 .user-ratings {
     margin-bottom: 20px;
-
+    flex-wrap:nowrap;
 }
 .address {
     margin-bottom: 100px;
@@ -112,7 +112,7 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 .right-side{
     width:100%;
-    margin-left: 100px;
+    margin-left: 50px;
 
 }
 
@@ -137,21 +137,22 @@ button.quest-btn:hover, button.voucher-btn:hover {
     width:100%;
     z-index: -1;
     margin-top: 20px;
+    margin-left: 0%;
 }
 .nav ul{
     display:flex;
     justify-content: center;
     list-style-type: none;
-    height: 100px;
+    height: 50px;
 }
 .nav ul li {
-    padding:10px;
+    padding:2px;
     width: 100%;
     cursor:pointer;
-    margin:20px;
     font-size: larger;
     text-align: center;
     transition: all .2s ease-in-out;
+    font-size: 15px;
 }
 
 .nav ul li.active,
@@ -167,77 +168,128 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 
 .product {
-    height: 520px;
-    width: 336px;;
+    height: auto;
+    width: 240px;
     background: #fff;
     cursor:pointer;
     overflow:hidden;
 
 }
 .product2{
-    height: 520px;
-    width: 336px;
+    height: auto;
+    width: 240px;
     background:#fff;
     cursor:pointer;
     overflow:hidden;
+
 }
 .product3 {
-    height: 520px;
-    width: 336px;
+    height: auto;
+    width: 240px;
     background:#fff;
     cursor:pointer;
     overflow:hidden;
 }
 .product4 {
-    height: 520px;
-    width: 336px;
+    height: auto;
+    width: 240px;
+    background:#fff;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.product5 {
+    height: auto;
+    width: 240px;
+    background:#fff;
+    cursor:pointer;
+    overflow:hidden;
+    margin-right: 35px;
+}
+
+.product6 {
+    height: auto;
+    width: 240px;
     background:#fff;
     cursor:pointer;
     overflow:hidden;
 }
 .product img {
-    height:320px;
-    width:320px;
+    max-height:224px;
+    max-width:224px;
     margin: 10px 10px 0px 10px;
 
 
 }
 .product2 img {
-    height:320px;
-    width:320px;
+    max-height:224px;
+    max-width:224px;
     margin:10px 10px 0px 10px;
 
 
 }
 .product3 img {
-    height:320px;
-    width:320px;
+    max-height:224px;
+    max-width:224px;
     margin:10px 10px 0px 10px;
 
 
 }
 .product4 img {
-    height:320px;
-    width:320px;
+    max-height:224px;
+    max-width:224px;
     margin:10px 10px 0px 10px;
 
 
 }
+
+.product5 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+}
+
+
+.product6 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+}
+
+
 .product-list{
     display:flex;
     margin-top: 30px;
     justify-content: space-between;
     margin-bottom: 50px;
+    
+    
+    
+}
+.saved-list{
+    display:flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    
+    
 }
 
 .product-name {
     margin-left: 12px;
-    text-overflow: ellipsis;
-    size: 10px;
+    margin-bottom:10px;
 
+
+ 
 }
 .product-detail {
     margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
 
 }
 
@@ -253,7 +305,12 @@ button.quest-btn:hover, button.voucher-btn:hover {
     font-size: 25px;
 }
 
-.fa-star{
+.checked{
     color:#E94E1A;
     
 }
+
+.location {
+    margin-bottom:10px;
+}
+
