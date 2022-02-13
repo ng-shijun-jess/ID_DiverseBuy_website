@@ -6,6 +6,10 @@
     background-size: cover;
     background-size: 200%,200%;
     background-repeat: no-repeat;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
 
 }
 
@@ -98,11 +102,13 @@ button.quest-btn, button.voucher-btn {
 
 
 }
-button.stamp-btn:hover, button.voucher-btn:hover {
+button.quest-btn:hover, button.voucher-btn:hover {
     background: rgb(236,105,30, 0.9);
 
 
 }
+
+
 .right-side{
     width:100%;
     margin-left: 100px;
