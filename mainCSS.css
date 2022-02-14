@@ -279,7 +279,7 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
 
 
 }
-
+/* General size of product images */
 
 
 .product-list{
@@ -290,19 +290,10 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
     box-sizing: border-box;
     margin: 0 auto;
     padding: 10px;
-    
-    
-    
+   
 }
+/* ensures that the different prodducts are spaced */
 
-.saved-list{
-    display:flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    
-    
-    
-}
 
 .product-name {
     margin-left: 12px;
@@ -311,6 +302,7 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
 
  
 }
+/* ensures that the position of the product name is correct */
 .product-detail {
     margin-left: 10px;
     text-overflow: ellipsis;
@@ -319,27 +311,31 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
 
 
 }
-
+/* For some reason, adding here the epllisis work than in the product-name */
 .original-price{
     color: #959595;
     font-size: 25px;
     text-decoration: line-through;
-
-
 }
+/* colour for the original price */
+
 .discounted-price {
     color:#E94E1A;
     font-size: 25px;
 }
+/* colour for the discounted price */
 
 .checked{
     color:#E94E1A;
     
 }
+/* to colour the fafa stars for ratings */
+
 
 .location {
     margin-bottom:10px;
 }
+/* making sure that the location has space under*/
 
 .review-status {
     margin-top: 40px;
@@ -347,12 +343,15 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
     color:grey;
     text-align: center;
 }
+/* Making the text grey*/
+
 .about-status {
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     color:grey;
     text-align: center;
 }
+/* Making the text grey*/
 
 .stream-status {
     margin-top: 40px;
@@ -360,18 +359,24 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
     color:grey;
     text-align: center;
 }
+/* Making the text grey*/
+
 .order-status {
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     color:grey;
     text-align: center;
 }
+/* Making the text grey*/
+
 .saved-product-status {
     margin-top: 40px;
     font-family: 'Roboto', sans-serif;
     color:grey;
     text-align: center;
 }
+/* Making the text grey*/
+
 
 
 @media (max-width: 1200px) {
@@ -379,3 +384,4 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
       min-width: 50%;
     }
 }
+/* ensures that the product resizes well */
