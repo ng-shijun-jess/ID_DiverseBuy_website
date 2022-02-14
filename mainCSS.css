@@ -1,3 +1,446 @@
+
+.profile-banner {
+    padding: 150px;
+    background-image: url('banner_placeholder.png');
+    margin:0%;
+    min-height: 338px;
+    background-size: cover;
+    background-size: 200%,200%;
+    background-repeat: no-repeat;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+
+}
+
+div.profile-banner:hover {
+    opacity: 50%;
+    cursor:pointer;
+
+}
+
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+
+
+
+
+}
+main{
+    margin: 0 74px;
+    padding-top:200px;
+    overflow-x:hidden;
+    left: 50px;
+    padding-top:90px;
+    display: flex;
+
+}
+
+
+.profile-img img{
+    border-radius: 50%;
+    width:230px;
+    height: 230px;
+    border-width: 10px solid #fff;
+    position:absolute;
+    left: 70px;
+    top: 230px;
+    cursor:pointer;
+
+}
+
+.profile-info {
+    flex-direction:column;
+    padding-top: 60px;
+    width: 250px;
+    padding: 90px 0px;
+}
+
+.profile-info h1{
+    margin-bottom: 5px;
+
+}
+.title {
+    margin-bottom: 30px;
+
+}
+.joined-status {
+    margin-bottom: 10px;
+
+}
+.user-ratings {
+    margin-bottom: 20px;
+    flex-wrap:nowrap;
+}
+.address {
+    margin-bottom: 100px;
+
+}
+
+
+button.quest-btn, button.voucher-btn{
+    border:0;
+    padding:20px;
+    width:100%;
+    margin-bottom: 20px;
+    background:#ec691e;
+    outline: auto;
+    outline-style:round;
+    outline-color: #ec691e;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+
+
+
+}
+button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover{
+    background: rgb(236,105,30, 0.9);
+
+
+}
+
+
+ button.view-badges-all{
+    border:0;
+    padding:20px;
+    width:100%;
+    margin-bottom: 20px;
+    background:#ec691e;
+    outline: auto;
+    outline-style:round;
+    outline-color: #ec691e;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+
+
+
+}
+.right-side{
+    width:100%;
+    margin-left: 50px;
+
+}
+
+
+.badges{
+    margin: 10px 0px 0px;
+    display:flex;
+    list-style-type: none;
+    background-color: #fff;
+    padding:0;
+    max-width:1070px;
+    display:flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.nav {
+    width:100%;
+    z-index: -1;
+    margin-top: 20px;
+    margin-left: 0%;
+}
+.nav ul{
+    display:flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 50px;
+}
+.nav ul li {
+    width: 100%;
+    cursor:pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    font-size: 15px;
+}
+
+.badges li img{
+    height:200px;
+
+}
+
+
+@media (max-width:1400px){
+    .badges{
+        width:800px;
+    }
+    .nav{
+        width:800px;
+    }
+
+    .badges li img{
+        height:100px;
+    
+    }
+    button.view-badges-all {
+        width:800px;
+    }
+}
+
+@media (max-width:1250px){
+    .badges{
+        width:600px;
+    }
+    .nav{
+        width:600px;
+    }
+    button.view-badges-all{
+        width:600px;
+    }
+    
+}
+
+@media (max-width:1044px){
+    .badges{
+        width:550px;
+    }
+    .nav{
+        width:550px;
+    }
+    button.view-badges-all{
+        width:550px;
+    }
+
+}
+@media (max-width:768px){
+    .badges{
+        width:550px;
+    }
+    button.view-badges-all{
+        width:550px;
+    }
+}
+
+.nav ul li.active,
+.nav ul li:hover {
+    box-shadow: 0px -3px 0px rgb(236,105,30) inset;
+}
+
+.profile-body{
+    width:100%;
+    z-index: -1;
+}
+
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 240px;
+    height: 370px;
+    margin-top: 40px;
+    margin-right:10px;
+}
+.product2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 240px;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-right:10px;
+
+}
+.product3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 240px;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-right:10px;
+}
+.product4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 240px;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-right:10px;
+}
+
+.product5 {
+    height: auto;
+    width: 240px;
+    background:#fff;
+    cursor:pointer;
+    overflow:hidden;
+    margin-right: 35px;
+}
+
+.product6 {
+    height: auto;
+    width: 240px;
+    background:#fff;
+    cursor:pointer;
+    overflow:hidden;
+}
+.product img {
+    max-height:224px;
+    max-width:224px;
+    margin: 10px 10px 0px 10px;
+
+
+}
+.product2 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+
+}
+.product3 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+
+}
+.product4 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+
+}
+
+.product5 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+}
+
+
+.product6 img {
+    max-height:224px;
+    max-width:224px;
+    margin:10px 10px 0px 10px;
+
+}
+
+.product-list{
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
+    
+    
+    
+}
+
+.saved-list{
+    display:flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
+    
+    
+}
+
+.product-name {
+    margin-left: 12px;
+    margin-bottom:10px;
+
+
+ 
+}
+.product-detail {
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+
+}
+
+.original-price{
+    color: #959595;
+    font-size: 25px;
+    text-decoration: line-through;
+
+
+}
+.discounted-price {
+    color:#E94E1A;
+    font-size: 25px;
+}
+
+.checked{
+    color:#E94E1A;
+    
+}
+
+.location {
+    margin-bottom:10px;
+}
+
+.review-status {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+    text-align: center;
+}
+.about-status {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+    text-align: center;
+}
+
+.stream-status {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+    text-align: center;
+}
+.order-status {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+    text-align: center;
+}
+.saved-product-status {
+    margin-top: 40px;
+    font-family: 'Roboto', sans-serif;
+    color:grey;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .product-list {
+      min-width: 50%;
+    }
+}
+
 .profile-banner {
     padding: 150px;
     background-image: url('banner_placeholder.png');
