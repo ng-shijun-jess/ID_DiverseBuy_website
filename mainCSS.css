@@ -12,29 +12,31 @@
     align-items: center;
 
 }
+/* This is to fix the size of the banner and ensures that the banner is not a repeated images and covers the web page */
 
-div.profile-banner:hover {
+div.profile-banner:hover,.profile-img:hover {
     opacity: 50%;
     cursor:pointer;
-
 }
-
+/* For this project this just gives the illusion that the user can chanege the banner and profile image, the idea though is that the user can change the banner, we just haven't implemented nor understand how to put in such an action */
 
 * {
     padding:0;
     margin:0;
     box-sizing:border-box;
 }
-
+/* All children have default 0 spaces*/
 
 body{
     background-color: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 
-
-
-
 }
+
+/* The colour changes the container in the badges and the font changes */
+
+
+
 main{
     margin: 0 74px;
     padding-top:200px;
@@ -44,7 +46,7 @@ main{
     display: flex;
 
 }
-
+/* keeping the profile information at certain area*/
 
 .profile-img img{
     border-radius: 50%;
@@ -57,37 +59,47 @@ main{
     cursor:pointer;
 
 }
+/* fixed the position of the profile img */
+
 
 .profile-info {
-    flex-direction:column;
     padding-top: 60px;
     width: 250px;
     padding: 90px 0px;
 }
+/* Giving the profile info a wider space*/
 
 .profile-info h1{
     margin-bottom: 5px;
 
 }
+/* Profile name has space before the title */
+
 .title {
     margin-bottom: 30px;
 
 }
+/* Profile title has space before the joined status*/
 .joined-status {
     margin-bottom: 10px;
 
 }
+/* Profile status has space before the rating*/
+
 .user-ratings {
     margin-bottom: 20px;
     flex-wrap:nowrap;
 }
+/* Profile rating has space before the user's location*/
+
+
 .address {
     margin-bottom: 100px;
 
 }
+/* Profile location has space before the buttons*/
 
-
-button.quest-btn, button.voucher-btn{
+button.quest-btn, button.voucher-btn, button.collection-btn{
     border:0;
     padding:20px;
     width:100%;
@@ -103,7 +115,18 @@ button.quest-btn, button.voucher-btn{
 
 
 }
-button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover{
+
+
+.collection{
+    object-fit:contain;
+}
+.collection img {
+    height:150px;
+    width:250px;
+}
+
+/* making the quest and quest button orange */
+button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover , button.collection-btn:hover{
     background: rgb(236,105,30, 0.9);
 
 
