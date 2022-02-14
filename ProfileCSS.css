@@ -207,10 +207,8 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover{
     justify-content: center;
     list-style-type: none;
     height: 50px;
-    
 }
 .nav ul li {
-    padding:2px;
     width: 100%;
     cursor:pointer;
     text-align: center;
