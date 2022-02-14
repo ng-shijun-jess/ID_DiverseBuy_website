@@ -87,7 +87,7 @@ main{
 }
 
 
-button.quest-btn, button.voucher-btn {
+button.quest-btn, button.voucher-btn{
     border:0;
     padding:20px;
     width:100%;
@@ -103,13 +103,29 @@ button.quest-btn, button.voucher-btn {
 
 
 }
-button.quest-btn:hover, button.voucher-btn:hover {
+button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover{
     background: rgb(236,105,30, 0.9);
 
 
 }
 
 
+ button.view-badges-all{
+    border:0;
+    padding:20px;
+    width:100%;
+    margin-bottom: 20px;
+    background:#ec691e;
+    outline: auto;
+    outline-style:round;
+    outline-color: #ec691e;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+
+
+
+}
 .right-side{
     width:100%;
     margin-left: 50px;
@@ -118,7 +134,7 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 
 .badges{
-    margin: 10px 0px;
+    margin: 10px 0px 0px;
     display:flex;
     list-style-type: none;
     background-color: #fff;
@@ -149,7 +165,9 @@ button.quest-btn:hover, button.voucher-btn:hover {
         height:100px;
     
     }
-    
+    button.view-badges-all {
+        width:800px;
+    }
 }
 
 @media (max-width:1250px){
@@ -159,8 +177,9 @@ button.quest-btn:hover, button.voucher-btn:hover {
     .nav{
         width:800px;
     }
-
-
+    button.view-badges-all{
+        width:600px;
+    }
     
 }
 
@@ -171,11 +190,11 @@ button.quest-btn:hover, button.voucher-btn:hover {
     .nav{
         width:800px;
     }
+    button.view-badges-all{
+        width:550px;
+    }
 
-    
 }
-
-
 
 .nav {
     width:100%;
@@ -188,12 +207,12 @@ button.quest-btn:hover, button.voucher-btn:hover {
     justify-content: center;
     list-style-type: none;
     height: 50px;
+    
 }
 .nav ul li {
     padding:2px;
     width: 100%;
     cursor:pointer;
-    font-size: larger;
     text-align: center;
     transition: all .2s ease-in-out;
     font-size: 15px;
@@ -316,7 +335,6 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 }
 
-
 .product-list{
     display: flex;
     max-width: 1200px;
@@ -383,4 +401,3 @@ button.quest-btn:hover, button.voucher-btn:hover {
       min-width: 50%;
     }
 }
-
