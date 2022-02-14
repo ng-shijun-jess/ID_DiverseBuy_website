@@ -123,14 +123,58 @@ button.quest-btn:hover, button.voucher-btn:hover {
     list-style-type: none;
     background-color: #fff;
     padding:0;
-    justify-content: space-between;
-    width:100%;
+    max-width:1070px;
+    display:flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
     
 }
+
 .badges li img{
     height:200px;
 
 }
+
+
+@media (max-width:1400px){
+    .badges{
+        width:800px;
+    }
+    .nav{
+        width:800px;
+    }
+
+    .badges li img{
+        height:100px;
+    
+    }
+    
+}
+
+@media (max-width:1250px){
+    .badges{
+        width:600px;
+    }
+    .nav{
+        width:800px;
+    }
+
+
+    
+}
+
+@media (max-width:1044px){
+    .badges{
+        width:550px;
+    }
+    .nav{
+        width:800px;
+    }
+
+    
+}
+
 
 
 .nav {
@@ -168,34 +212,48 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 
 .product {
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
     width: 240px;
-    background: #fff;
-    cursor:pointer;
-    overflow:hidden;
-
+    height: 370px;
+    margin-top: 40px;
+    margin-right:10px;
 }
 .product2{
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
     width: 240px;
-    background:#fff;
-    cursor:pointer;
-    overflow:hidden;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-right:10px;
 
 }
 .product3 {
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
     width: 240px;
-    background:#fff;
-    cursor:pointer;
-    overflow:hidden;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-right:10px;
 }
 .product4 {
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
     width: 240px;
-    background:#fff;
-    cursor:pointer;
-    overflow:hidden;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-top: 40px;
+    margin-right:10px;
 }
 
 .product5 {
@@ -260,14 +318,18 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 
 .product-list{
-    display:flex;
-    margin-top: 30px;
+    display: flex;
+    max-width: 1200px;
     justify-content: space-between;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
     
     
     
 }
+
 .saved-list{
     display:flex;
     margin-top: 30px;
@@ -312,5 +374,13 @@ button.quest-btn:hover, button.voucher-btn:hover {
 
 .location {
     margin-bottom:10px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .product-list {
+      min-width: 50%;
+    }
 }
 
