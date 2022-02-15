@@ -388,17 +388,48 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
 
 
 .cart-title{
-    padding-top: 200px;
-    padding-bottom: 77px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 70px;
     color:#E94E1A;
-    font-size: 46px;
-}
-.guoba-pic{
-    height:311px;
-    margin-left: 160px;
+    font-size: 50px;
+    width:  1500px;
 }
 
+.product-selection{
+    margin-bottom: 30px;
+    margin-left: 1140px;
+    display:flex;
+    width:300px;
+}
+
+.select-all-cart, .select-cart {
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color:#E94E1A;
+    font-weight: bold;
+    width:200px;
+}
+
+.select-all-cart:hover, .select-cart:hover {
+    color:#ec691e;
+}
+
+
+.guoba-pic{
+    height:300px;
+    margin-left: 1px;
+}
+
+
+.cart-right-side{
+    padding-left: 50px;
+    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 .product-cart-row{
@@ -407,22 +438,22 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
 
 
 .cart-quantity{
-    height:55px;
-    width:850px;
+    height:50px;
     background-color: #fff;
     text-align: center;
     display: flex;
     align-items: center;
+    width:930px;
 
-    
 
 }
 
 .cart-details{
-    height:256px;
-    width:850px;
+    height:250px;
+    width:100%;
     background-color: #fff;
     box-shadow: #959595;
+    width:930px;
 
 }
 
@@ -435,6 +466,7 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
     
     
 }
+
 input[type='number']::-webkit-inner-spin-button {
     position: absolute;
     width: 12.5%;
@@ -444,8 +476,10 @@ input[type='number']::-webkit-inner-spin-button {
   } 
 
 .cart-first-row{
-    padding: 26px 30px;
+    padding: 26px 20px;
     display: flex;
+
+
 }
 
 #cart-like{
@@ -453,10 +487,89 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .guoba-stocks-quantity{
-    padding-left: 200px;
+    padding-right: 100px;
+    margin-left: 50px;
 }
 
 .cart-second-row{
     padding: 26px 30px;
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1410px) {
+    .cart-quantity{
+        width:800px;
+    }
+    .cart-details{
+        width:800px;
+    }
+    
+    .guoba-stocks-quantity{
+        padding-left: 200px;
+        padding-right: 40px;
+    }
+    .guoba-pic{
+        height:300px;
+    }
+    .guoba-stocks-quantity{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+
+
+@media (max-width:1240px) {
+    .cart-quantity{
+        width:850px;
+    }
+    .cart-details{
+        width:850px;
+    
+    }
+    .guoba-stocks-quantity{
+        padding-left: 100px;
+        padding-right: 10px;
+    }
+    .guoba-pic{
+        height:300px;
+        margin-left: 150px;
+    }
+
+
+}
+
+
+
+
+
+@media (min-width:1200px) {
+    .cart-quantity{
+        width:850px;
+    }
+    .cart-details{
+        width:850px;
+    
+    }
+    .guoba-stocks-quantity{
+        padding-left: 100px;
+        padding-right: 10px;
+    }
+    .guoba-pic{
+        height:300px;
+        margin-left: 150px;
+    }
+
+
+}
+
