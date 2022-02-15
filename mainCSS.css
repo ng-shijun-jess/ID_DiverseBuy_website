@@ -126,7 +126,7 @@ button.quest-btn, button.voucher-btn, button.collection-btn, button.view-badges-
 }
 
 /* making the quest and quest button orange */
-button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover , button.collection-btn:hover, button.more-info-btn:hover, button.buy-now-btn:hover{
+button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover , button.collection-btn:hover, button.more-info-btn:hover, button.buy-now-btn:hover,.to-payment-btn:hover{
     background: rgb(236,105,30, 0.9);
 
 
@@ -524,6 +524,9 @@ input[type='number']::-webkit-inner-spin-button {
         padding-left: 100px;
         padding-right: 100px;
     }
+    .to-payment-btn{
+        margin: 60px 500px 30px;
+    }
     
 }
 
@@ -543,6 +546,9 @@ input[type='number']::-webkit-inner-spin-button {
     .guoba-pic{
         height:300px;
         margin-left: 150px;
+    }
+    .to-payment-btn{
+        margin: 60px 500px 30px;
     }
 
 
@@ -635,4 +641,19 @@ button.buy-now-btn{
 .item-selection-cart,.additional-rewards,.total-cost-cart {
     padding-right: 30px;
     padding-bottom: 10px;
+}
+
+.to-payment-btn{
+    border:0;
+    padding:20px;
+    width:1000px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: 250px;
+    background:#E14219;
+    outline: auto;
+    outline-style:round;
+    outline-color: #E14219;
+    cursor: pointer;
+    color: white;
 }
