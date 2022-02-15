@@ -385,3 +385,78 @@ button.quest-btn:hover, button.voucher-btn:hover, button.view-badges-all:hover ,
     }
 }
 /* ensures that the product resizes well */
+
+
+.cart-title{
+    padding-top: 200px;
+    padding-bottom: 77px;
+    text-align: center;
+    color:#E94E1A;
+    font-size: 46px;
+}
+.guoba-pic{
+    height:311px;
+    margin-left: 160px;
+}
+
+
+
+.product-cart-row{
+    display: flex;
+}
+
+
+.cart-quantity{
+    height:55px;
+    width:850px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    
+
+}
+
+.cart-details{
+    height:256px;
+    width:850px;
+    background-color: #fff;
+    box-shadow: #959595;
+
+}
+
+.quantity-space-cart{
+    padding:12px;
+}
+
+#demoInput {
+    text-align: center;
+    
+    
+}
+input[type='number']::-webkit-inner-spin-button {
+    position: absolute;
+    width: 12.5%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  } 
+
+.cart-first-row{
+    padding: 26px 30px;
+    display: flex;
+}
+
+#cart-like{
+    padding: 4px 4px 0 15px;
+}
+
+.guoba-stocks-quantity{
+    padding-left: 200px;
+}
+
+.cart-second-row{
+    padding: 26px 30px;
+    display: flex;
+}

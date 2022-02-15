@@ -12,3 +12,9 @@ function tabs(panelIndex){
 }
 tabs(0);
 
+function increment() {
+    document.getElementById('demoInput').stepUp();
+ }
+ function decrement() {
+    document.getElementById('demoInput').stepDown();
+ }

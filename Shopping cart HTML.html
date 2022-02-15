@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        Shopping cart
+        <title>Shopping cart</title>
+        <link rel = stylesheet href = 'mainCSS.css' type = text/css>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+        
     </head>
     <body>
-        <div class = 'cart-title'></div>
-        
+        <div class = 'cart-title'><b>Shopping Cart</b></div>
+        <div class = 'product-cart-row'>
+            <div><img src = 'Guoba ramen pot.jpg' class = 'guoba-pic'></div>
+            <div class = 'cart-right-side'>
+                <div class = 'cart-details'>
+                    <div class = 'cart-first-row'>
+                        <b>Genshin Impact Guoba Ramen Bowl</b>
+                        <i class="far fa-heart" id = 'cart-like'></i> <b>13</b>
+
+                        <div class = 'guoba-stocks-quantity'><b>Remaining  stocks: 5</b></div>
+                    </div>
+                    <div class = 'cart-second-row'>
+                    </div>
+                </div>
+                <div class = 'cart-quantity'>
+                    <div class = 'quantity-space-cart'>Quantity: </div>
+                    <button onclick="decrement()">-</button>
+                    <input id=demoInput type=number min=0 max=5>
+                    <button onclick="increment()">+</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src = 'IPjs.js'></script>
     </body>
 
 
