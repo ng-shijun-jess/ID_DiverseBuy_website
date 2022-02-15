@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
   list-style: none;
   text-decoration: none;
 }
@@ -15,7 +16,7 @@ body {
   overflow: hidden;
 }
 
-/* Nav Bar Code */
+/* START OF NAV BAR */
 nav {
   background: white;
   height: 100px;
@@ -30,6 +31,7 @@ nav ul.logo-search-filter {
   flex-wrap: nowrap;
   align-items: center;
 }
+
 /* Consists of logo, search bar and filter icon. */
 nav ul.logo-search-filter li {
   list-style: none;
@@ -269,36 +271,204 @@ img#logo {
 .icon:hover img.profileOn_icon {
   opacity: 1;
 }
-/* End of nav bar CSS */
+/* END OF NAV BAR */
 
-/* Promotions section */
-.promotion_container {
+/* START OF TOP section */
+/* Container that stores announcements, claw machine, vouchers and orders tracker */
+.top_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1126px;
+  height: 640px;
+  row-gap: 10px;
+}
+
+/* Consists of announcements, claw machine and vouchers */
+.top_row1 {
+  display: grid;
+  column-gap: 120px;
+  grid-template-columns: 800px 300px;
+  grid-template-rows: 230px 100px;
+}
+
+@media (max-width: 1086px) {
+  .top_row1 {
+    column-gap: 10px;
+  }
+}
+
+/* Announcements box */
+div.announcements_box {
+  display: flex;
+  width: 800px;
+  height: 350px;
+  background-color: #7acfe2;
+  text-align: center;
+  align-items: center;
+  grid-column-start: 1; /*Announcements box is inside top_row1 grid*/
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* Claw Machine Box */
+div.claw_machine_box {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 230px;
+  grid-column-start: 2; /*Claw machine box box is inside top_row1 grid*/
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  cursor: pointer;
+}
+
+/* Voucher Box */
+div.voucher_box {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 120px;
+  margin-top: 10px;
+  grid-column-start: 2; /*Voucher box is inside top_row1 grid*/
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  cursor: pointer;
+}
+
+/* Order Tracker box */
+.top_row2 {
+  width: 1126px;
+  height: 250px;
+  background-color: white;
+}
+
+/* Orders Tracker Title box*/
+.orders_text_box {
+  background-color: #ef901c;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+
+/* Orders Tracker Title */
+.orders_text {
+  padding-top: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/* Progress section box */
+.progress_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 170px;
+}
+
+/* Progress box first row consists of icons */
+.progress_top_row {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* Delivery text on sectionond row of progress box */
+.delivery_text {
+  color: #e94e1a;
+  font-size: 24px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Details button box */
+.details_box {
+  width: 100%;
+  height: 40px;
+  background-color: #e94e1a;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Details button text */
+.details_text {
+  padding-top: px;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-top: 3px;
+}
+/* END OF TOP section */
+
+/* START OF productS section */
+.products_large_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.products_section {
+  width: 1126px;
+  height: 40px;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+  /* margin-top: 20px;
+  margin-left: 200px; */
+  color: white;
+  background-color: #ef901c;
+}
+.product_container {
   display: flex;
   max-width: 1200px;
   justify-content: space-around;
+  align-items: flex-start;
   flex-wrap: wrap;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 10px;
+  padding-top: 0;
 }
-
-/* Large Promotion box */
-div.promotion_box {
+#promotion_container {
+  min-width: 1200px;
+}
+/* Large product box */
+div.product_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: white;
+  max-width: 240px;
   width: 240px;
   height: 370px;
   /* border: 1px solid black; */
-  margin-top: 40px;
+  /* margin-top: 20px; */
 }
 
+#product_bottomrow {
+  margin-top: 20px;
+}
 /* Product Image */
 img.stickertape {
   margin-top: 6px;
 }
-
+img.rainbow_slime {
+  margin-top: 6px;
+}
+img.petrock {
+  padding-top: 39.5px;
+  padding-bottom: 39.5px;
+}
 /* Like button */
 img.heartnull_icon {
   width: 24.44px;
@@ -306,7 +476,7 @@ img.heartnull_icon {
 }
 
 /*  text Box below image */
-div.promobox_text {
+div.productbox_text {
   display: grid;
   grid-template-columns: 70px 170px;
   grid-template-rows: 32px 32px 32px 32px;
@@ -319,9 +489,13 @@ div.promobox_text {
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
+span.strikethrough_price {
+  color: #959595;
+  text-decoration: line-through;
+}
 
 /* first row of text (like icon, like count */
-.promobox_row1 {
+.productbox_row1 {
   display: flex;
   flex-wrap: wrap;
   grid-column-start: 1;
@@ -329,19 +503,30 @@ div.promobox_text {
   grid-row-start: 1;
   grid-row-end: 2;
 }
-
+.heartnumber {
+  font-size: 18px;
+  color: #707070;
+  margin-left: 2px;
+  margin-top: 1px;
+}
 /* first row title of product */
-.promobox_title {
+.productbox_title {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   font-size: 17px;
+  font-weight: 500;
   margin-right: 8px;
 }
 
+/* Pet Rock Title */
+#petrock_title {
+  font-size: 19px;
+}
+
 /* price of product */
-.promobox_price {
+.productbox_price {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -353,7 +538,7 @@ div.promobox_text {
 }
 
 /* Product Rating (icons) */
-.promobox_rating {
+.productbox_rating {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -369,7 +554,7 @@ i.fa.fa-star {
 }
 
 /* Rating number */
-.promobox_rating_text {
+.productbox_rating_text {
   margin-top: 11px;
   margin-left: 5px;
   font-size: 18px;
@@ -378,7 +563,7 @@ i.fa.fa-star {
 }
 
 /* Country text */
-.promobox_country {
+.productbox_country {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 4;
@@ -387,11 +572,11 @@ i.fa.fa-star {
   color: #707070;
   margin-top: 6px;
 }
-/* End of promotions section */
+/* End of products section */
 
 /* Adjusting Nav bar responsiveness */
 @media (max-width: 1200px) {
-  .promotion_container {
+  .product_container {
     min-width: 50%;
   }
 }
@@ -426,6 +611,193 @@ i.fa.fa-star {
     padding: 10px 8px;
     text-align: center;
     font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  img#logo {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    display: flex;
+    height: 150px;
+    flex-wrap: wrap;
+  }
+  nav ul.ul-icon {
+    display: flex;
+    justify-content: space-around;
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+  /* Grey Quest icon */
+  .questNull_icon {
+    position: absolute;
+    margin-top: 5px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  /* Orange Quest icon */
+  .questOn_icon {
+    width: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  /* Grey Quest icon when hovering */
+  .icon:hover img.questNull_icon {
+    opacity: 0;
+  }
+  /* Orange Quest Icon when hovering */
+  .icon:hover img.questOn_icon {
+    opacity: 1;
+  }
+
+  /* Grey Chat icon */
+  .chatNull_icon {
+    position: absolute;
+    width: 35px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  /* Orange Chat icon */
+  .chatOn_icon {
+    width: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 5px;
+  }
+  /* Grey Chat icon when hovering */
+  .icon:hover img.chatNull_icon {
+    opacity: 0;
+  }
+  /* Orange Chat Icon when hovering */
+  .icon:hover img.chatOn_icon {
+    opacity: 1;
+  }
+
+  /* Grey Cart icon */
+  .cartNull_icon {
+    position: absolute;
+    width: 35px;
+    margin-top: 6px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+  }
+  /* Orange Cart icon */
+  .cartOn_icon {
+    width: 35px;
+    margin-top: 6px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 2px;
+    opacity: 0;
+  }
+  /* Grey Cart icon when hovering */
+  .icon:hover img.cartNull_icon {
+    opacity: 0;
+  }
+  /* Orange Cart Icon when hovering */
+  .icon:hover img.cartOn_icon {
+    opacity: 1;
+  }
+
+  .input-wrapper {
+    width: 350px;
+  }
+  input {
+    width: 300px;
+  }
+  div.logo {
+    padding: 0;
+    margin: 0;
+  }
+  div.top_container {
+    height: 570px;
+  }
+  div.announcements_box {
+    width: 602px;
+    height: 252px;
+  }
+  img.announcements_pic {
+    width: 600px;
+    height: 180px;
+  }
+  .top_row1 {
+    display: grid;
+    height: 200px;
+    column-gap: 0px;
+    row-gap: 2px;
+    grid-template-columns: 585px 120px;
+    grid-template-rows: 173px 90px;
+  }
+  img.claw_machine_pic {
+    width: 120px;
+    height: 173px;
+    margin: 0;
+    padding: 0;
+  }
+  div.voucher_box {
+    padding: 0;
+    margin: 0;
+  }
+  img.voucher_pic {
+    width: 150px;
+    height: 83px;
+  }
+  .orders_text_box {
+    max-width: 768px;
+  }
+  .progress_box {
+    max-width: 768px;
+  }
+  .details_box {
+    max-width: 768px;
+  }
+  img.box_icon_grey {
+    width: 90px;
+  }
+  img.grey_path {
+    width: 200px;
+  }
+  img.delivering_icon_orange {
+    width: 90px;
+  }
+  img.orange_path {
+    width: 200px;
+  }
+  img.order_completed_grey {
+    width: 90px;
+  }
+  .product_container {
+    display: flex;
+    max-width: 768px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 40px 10px 40px;
+  }
+  #product_toprow {
+    margin-bottom: 20px;
+  }
+  #product_bottomrow {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  #promotion_container {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 40px 10px 40px;
+    min-width: 0px;
   }
 }
 /* End of adjusting Nav bar responsiveness */
