@@ -1,15 +1,109 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <title>DiverseBuy Profile Page</title>
-        <link rel="stylesheet" href='mainCSS.css' type= 'text/css'>
+        <link rel="stylesheet" href='testing.css' type= 'text/css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
+            <nav>
+                <ul class="logo-search-filter">
+                    <li class="logo_list">
+                        <a href="#">
+                            <div class="logo">
+                                <img src="images/diversebuy_logo.png" id="logo">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="input_list">
+                        <!-- Code for Search Bar -->
+                        <a href="#">
+                            <div class="input-wrapper">
+                                <div class="fa fa-search"></div>
+                                <input type="text" placeholder="Search" class = "search_bar_input" />
+                                <div class="fa fa-times"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="filter_list">
+                        <!-- Code for Search Filter (Not Clicked) -->
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/filter_null.png" class="filterNull_icon">
+                                <img src="images/filter_coloured.png" class="filterOn_icon">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+    
+                <!-- Unordered List for Right Icons -->
+                <ul class="ul-icon">
+                    <!-- Code for Sell Icon (Not Clicked) -->
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/sell_null.png" class="sellNull_icon">
+                                <img src="images/sell_coloured.png" class="sellOn_icon">
+                            </div>
+                            <div class="name"> Sell </div>
+                        </a>
+                    </li>
+                    <!-- Code for Rewards Icon (Not Clicked) -->
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/rewards_null.png" class="rewardsNull_icon">
+                                <img src="images/rewards_coloured.png" class="rewardsOn_icon">
+                            </div>
+                            <div class="name"> Rewards </div>
+                        </a>
+                    </li>
+                    <!-- Code for Quest Icon (Not Clicked) -->
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/quest_null.png" class="questNull_icon">
+                                <img src="images/quest_coloured.png" class="questOn_icon">
+                            </div>
+                            <div class="name"> Quest </div>
+                        </a>
+                    </li>
+                    <!-- Code for Chat Icon (Not Clicked) -->
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/chat_null.png" class="chatNull_icon">
+                                <img src="images/chat_coloured.png" class="chatOn_icon">
+                            </div>
+                            <div class="name"> Chat </div>
+                        </a>
+                    </li>
+                    <!-- Code for Cart Icon (Not Clicked) -->
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/cart_null.png" class="cartNull_icon">
+                                <img src="images/cart_coloured.png" class="cartOn_icon">
+                            </div>
+                            <div class="name"> Cart </div>
+                        </a>
+                    </li>
+                    <!-- Code for Profile Icon (Not Clicked) -->
+                    <li>
+                        <a href="#">
+                            <div class="icon">
+                                <img src="images/profile_null.png" class="profileNull_icon">
+                                <img src="images/profile_coloured.png" class="profileOn_icon">
+                            </div>
+                            <div class="name"> Profile </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END OF NAV BAR CODE -->
             <div class = 'profile-banner'>
                 <p class = 'banner-link'>Banner</p>
             </div>
@@ -18,7 +112,8 @@
             </div>
         </header>
         <main>
-            <div class= 'container'>
+            
+            <div>
                 <div class ='profile-info'> 
                     <h1 class = 'username'>Alan Becker</h1> 
                     <div class = 'title'>
