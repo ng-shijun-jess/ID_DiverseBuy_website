@@ -878,11 +878,32 @@ i#rating_star {
   }
 }
 /* End of adjusting Nav bar responsiveness */
+
+/* START OF STARTPAGE */
+/* Styling the body background */
 .body_startpage {
   background-color: #87ceeb;
   display: block;
   font-family: roboto, sans-serif;
 }
+
+/* Box containing the lottie animation */
+.lottie_container {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+/* lottie animation */
+.lottie_loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* Container storing start_background_box and start_option_box */
 .start_container {
   width: 90%;
   overflow: hidden;
@@ -916,6 +937,8 @@ i#rating_star {
   transform-style: preserve-3d;
   transition: transform 1.8s;
 }
+
+/* Styling login and signup page */
 .signup_page,
 .login_page {
   position: absolute;
@@ -1016,4 +1039,5 @@ p.credits {
   color: #ec691e;
   font-weight: bold;
 }
+/* END OF STARTPAGE */
 /* ===========================================END OF JI XUAN CODE =========================================================*/
