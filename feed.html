@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Feed</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='feed.css'>
 
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <!-- Heart Shape Link -->
@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class="lottie_container">
+        <lottie-player class="lottie_loading" src="https://assets2.lottiefiles.com/packages/lf20_t1ga2e1n.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+    </div>
+    
     <!-- Container that wraps around all code -->
     <div class="container">
         <!-- Nav Bar -->
@@ -33,7 +39,7 @@
                     <a href="#">
                         <div class="input-wrapper">
                             <div class="fa fa-search"></div>
-                            <input type="text" placeholder="Search" />
+                            <input type="text" placeholder="Search" class="search_bar_input" />
                             <div class="fa fa-times"></div>
                         </div>
                     </a>
@@ -170,11 +176,11 @@
                             <p class="productbox_title"> 5cm wide decorative sticker tape </p>    <!-- Title -->
                             <p class="productbox_price"> $1.35 </p>       <!-- Price -->
                             <div class="productbox_rating">       <!-- Rating icons -->
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
                             </div>
                             <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                             <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -192,11 +198,11 @@
                             <p class="productbox_title"> Popular Rainbow Fluffy Slime </p>    <!-- Title -->
                             <span class="productbox_price"> <span class="strikethrough_price"> $4-$7.88 </span> $2-$5.78 </span>       <!-- Price -->
                             <div class="productbox_rating">       <!-- Rating icons -->
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
                             </div>
                             <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                             <p class="productbox_country"> Mainland China </p>     <!-- Country -->
@@ -214,11 +220,11 @@
                             <p class="productbox_title" id="petrock_title"> Pet Rock </p>    <!-- Title -->
                             <p class="productbox_price"> $0.05-$3.69 </p>       <!-- Price -->
                             <div class="productbox_rating">       <!-- Rating icons -->
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
                             </div>
                             <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                             <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -236,11 +242,11 @@
                             <p class="productbox_title"> Ferero Rocher Fine- Hazelnut Chocolate.. </p>    <!-- Title -->
                             <span class="productbox_price"> <span class="strikethrough_price"> $37.00 </span> $35.63 </span>       <!-- Price -->
                             <div class="productbox_rating">       <!-- Rating icons -->
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
                             </div>
                             <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                             <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -268,11 +274,11 @@
                         <p class="productbox_title"> AMONG US CREW-MATE PLUSHY </p>    <!-- Title -->
                         <span class="productbox_price"> <span class="strikethrough_price"> $7.50 </span> $6.00 </span>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -290,11 +296,11 @@
                         <p class="productbox_title"> Loliuicca Sensory- Fidget Toy </p>    <!-- Title -->
                         <span class="productbox_price"> <span class="strikethrough_price"> $29.99 </span> $6.00 </span>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Mainland China </p>     <!-- Country -->
@@ -314,11 +320,11 @@
                         <p class="productbox_title"> Genshin Impact Slime Plushy </p>    <!-- Title -->
                         <p class="productbox_price"> <span class="strikethrough_price"> $28.99 </span> $26.99 </p>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -336,11 +342,11 @@
                         <p class="productbox_title"> Genshin Impact Guo Ba Bowl </p>    <!-- Title -->
                         <span class="productbox_price"> <span class="strikethrough_price"> $69.99 </span> $65.99 </span>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -358,11 +364,11 @@
                         <p class="productbox_title" id="rem_title"> Cute Doggo Rem Plushy </p>    <!-- Title -->
                         <p class="productbox_price"> $30 </p>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -380,11 +386,11 @@
                         <p class="productbox_title" id="dvalin_title"> Dvalin Genshin Impact Sticker </p>    <!-- Title -->
                         <p class="productbox_price"> $1.00 </p>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -402,11 +408,11 @@
                         <p class="productbox_title" id="zhongxina_title"> Zhong Xina T-shirt </p>    <!-- Title -->
                         <p class="productbox_price"> $15 </p>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -424,11 +430,11 @@
                         <p class="productbox_title" id="mirage_title"> Mirage Apex Legends Pillow </p>    <!-- Title -->
                         <p class="productbox_price"> $20 </p>       <!-- Price -->
                         <div class="productbox_rating">       <!-- Rating icons -->
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
                         </div>
                         <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
                         <p class="productbox_country"> Singapore </p>     <!-- Country -->
@@ -437,6 +443,6 @@
             </div>
         </div>
     </div>
-    <script src='main.js'></script>
+    <script src='startpage.js'></script>
 </body>
 </html>
