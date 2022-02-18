@@ -11,20 +11,20 @@
     <style>
         .claw-main{
             width:100%;
-            height:86.5vh;
-            gap:300px;
+            height:100%;
             display: flex;
             justify-content: center;
             background-color: blanchedalmond;
         }
         .claw-first-column,.claw-second-column,.claw-third-column{
-            margin-top: 50px;
+            margin: 60px;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
-        .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn, .claw-model-btn, .claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
+        .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
             padding:20px;
-            width:250px;
+            width:200px;
             margin-bottom: 20px;
             background:#ec691e;
             outline: auto;
@@ -34,6 +34,50 @@
             cursor: pointer;
             color: white;
         }
+        .claw-play-button-btn{
+            margin-top:30px;
+            width:300px
+            
+        }
+        .claw-machine-img{
+            max-width: 300px;
+            max-height:400px;
+        }
+        @media (max-width:970px){
+            .claw-first-column,.claw-second-column,.claw-third-column{
+                margin: 20px;
+            }
+            .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
+                padding:20px;
+                width:150px;
+                margin-bottom: 20px;
+                background:#ec691e;
+                outline: auto;
+                outline-style:round;
+                outline-color: #ec691e;
+                margin-right: 10px;
+                cursor: pointer;
+                color: white;
+            }
+        }
+        @media (max-width:768px){
+            .claw-first-column,.claw-second-column,.claw-third-column{
+                margin: 10px;
+            }
+            .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
+                padding:20px;
+                width:150px;
+                margin-bottom: 20px;
+                background:#ec691e;
+                outline: auto;
+                outline-style:round;
+                outline-color: #ec691e;
+                margin-right: 10px;
+                cursor: pointer;
+                color: white;
+            }
+        }
+        
 
     </style>
 </head>
@@ -139,7 +183,7 @@
             <button class = 'claw-quest-btn'>Quest</button>
         </div>
         <div class = 'claw-second-column'>
-            <button class =  'claw-model-btn'></button>
+            <button class =  'claw-model'><img src = 'images/claw_machine_screenshot.png' class = 'claw-machine-img'></button>
             <button class = 'claw-play-button-btn'>Play</button>
         </div>
         <div class = 'claw-third-column'>
