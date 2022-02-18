@@ -1,197 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claw Machine</title>
-    <link rel="stylesheet" href='current.css' type= 'text/css'>
-
-
-    <style>
-        .claw-main{
-            width:100%;
-            height:100%;
-            display: flex;
-            justify-content: center;
-            background-color: blanchedalmond;
-        }
-        .claw-first-column,.claw-second-column,.claw-third-column{
-            margin: 60px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
-            padding:20px;
-            width:200px;
-            margin-bottom: 20px;
-            background:#ec691e;
-            outline: auto;
-            outline-style:round;
-            outline-color: #ec691e;
-            margin-right: 10px;
-            cursor: pointer;
-            color: white;
-        }
-        .claw-play-button-btn{
-            margin-top:30px;
-            width:300px
+<html>
+    <head>
+        <title>Claw Machine</title>
+        <link rel="stylesheet" href='current.css' type= 'text/css'>
+        <style>
+            .claw-main{
+                width:100%;
+                height:100%;
+                display: flex;
+                justify-content: center;
+                background-color: blanchedalmond;
+                font-family: roboto, sans-serif;
+            }
+            .claw-first-column,.claw-second-column,.claw-third-column{
+                margin: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
+                padding:20px;
+                width:200px;
+                margin-bottom: 20px;
+                background:#ec691e;
+                outline: auto;
+                outline-style:round;
+                outline-color: #ec691e;
+                cursor: pointer;
+                color: white;
+            }
+            .claw-play-button-btn{
+                margin-top:30px;
+                width:300px
+                
+                
+            }
+            .claw-machine-img{
+                max-width: 300px;
+                max-height:400px;
+            }
+            .claw-set-complete{
+                background-color: #fff;
+                width:200px;
+                height:100px;
+                padding:10px;
+                text-align: center;
+                margin-bottom:20px;
+            }
+            .claw-ticket{
+                background-color: #fff;
+                width:200px;
+                height:120px;
+                padding:10px;
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .buy-now-ticket{
+                width:150px;
+                margin-top: 20px;
+                background:#ec691e;
+                outline: auto;
+                outline-style:round;
+                outline-color: #ec691e;
+                cursor: pointer;
+                color: white;
+            }
+            .num-set-complete{
+                margin-top: 10px;
+            }
             
-        }
-        .claw-machine-img{
-            max-width: 300px;
-            max-height:400px;
-        }
-        @media (max-width:970px){
-            .claw-first-column,.claw-second-column,.claw-third-column{
-                margin: 20px;
+            @media (max-width:970px){
+                .claw-first-column,.claw-second-column,.claw-third-column{
+                    margin: 20px;
+                }
+                .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
+                    padding:20px;
+                    width:150px;
+                    margin-bottom: 20px;
+                    background:#ec691e;
+                    outline: auto;
+                    outline-style:round;
+                    outline-color: #ec691e;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    color: white;
+                }
             }
-            .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
-                padding:20px;
-                width:150px;
-                margin-bottom: 20px;
-                background:#ec691e;
-                outline: auto;
-                outline-style:round;
-                outline-color: #ec691e;
-                margin-right: 10px;
-                cursor: pointer;
-                color: white;
+            @media (max-width:768px){
+                .claw-first-column,.claw-second-column,.claw-third-column{
+                    margin: 10px;
+                }
+                .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
+                    padding:20px;
+                    width:150px;
+                    margin-bottom: 20px;
+                    background:#ec691e;
+                    outline: auto;
+                    outline-style:round;
+                    outline-color: #ec691e;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    color: white;
+                }
             }
-        }
-        @media (max-width:768px){
-            .claw-first-column,.claw-second-column,.claw-third-column{
-                margin: 10px;
-            }
-            .claw-available-rewards-btn, .claw-reward-history-btn, .claw-quest-btn,.claw-play-button-btn,.claw-collectibles-btn, .claw-stamps-btn{
-                padding:20px;
-                width:150px;
-                margin-bottom: 20px;
-                background:#ec691e;
-                outline: auto;
-                outline-style:round;
-                outline-color: #ec691e;
-                margin-right: 10px;
-                cursor: pointer;
-                color: white;
-            }
-        }
-        
+            
 
-    </style>
-</head>
-<body>
-    <nav>
-        <ul class="logo-search-filter">
-            <li class="logo_list">
-                <a href="#">
-                    <div class="logo">
-                        <img src="images/diversebuy_logo.png" id="logo">
-                    </div>
-                </a>
-            </li>
-            <li class="input_list">
-                <!-- Code for Search Bar -->
-                <a href="#">
-                    <div class="input-wrapper">
-                        <div class="fa fa-search"></div>
-                        <input type="text" placeholder="Search" class = "search_bar_input" />
-                        <div class="fa fa-times"></div>
-                    </div>
-                </a>
-            </li>
-            <li class="filter_list">
-                <!-- Code for Search Filter (Not Clicked) -->
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/filter_null.png" class="filterNull_icon">
-                        <img src="images/filter_coloured.png" class="filterOn_icon">
-                    </div>
-                </a>
-            </li>
-        </ul>
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="logo-search-filter">
+                <li class="logo_list">
+                    <a href="#">
+                        <div class="logo">
+                            <img src="images/diversebuy_logo.png" id="logo">
+                        </div>
+                    </a>
+                </li>
+                <li class="input_list">
+                    <!-- Code for Search Bar -->
+                    <a href="#">
+                        <div class="input-wrapper">
+                            <div class="fa fa-search"></div>
+                            <input type="text" placeholder="Search" class = "search_bar_input" />
+                            <div class="fa fa-times"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="filter_list">
+                    <!-- Code for Search Filter (Not Clicked) -->
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/filter_null.png" class="filterNull_icon">
+                            <img src="images/filter_coloured.png" class="filterOn_icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
 
-        <!-- Unordered List for Right Icons -->
-        <ul class="ul-icon">
-            <!-- Code for Sell Icon (Not Clicked) -->
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/sell_null.png" class="sellNull_icon">
-                        <img src="images/sell_coloured.png" class="sellOn_icon">
-                    </div>
-                    <div class="name"> Sell </div>
-                </a>
-            </li>
-            <!-- Code for Rewards Icon (Not Clicked) -->
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/rewards_null.png" class="rewardsNull_icon">
-                        <img src="images/rewards_coloured.png" class="rewardsOn_icon">
-                    </div>
-                    <div class="name"> Rewards </div>
-                </a>
-            </li>
-            <!-- Code for Quest Icon (Not Clicked) -->
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/quest_null.png" class="questNull_icon">
-                        <img src="images/quest_coloured.png" class="questOn_icon">
-                    </div>
-                    <div class="name"> Quest </div>
-                </a>
-            </li>
-            <!-- Code for Chat Icon (Not Clicked) -->
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/chat_null.png" class="chatNull_icon">
-                        <img src="images/chat_coloured.png" class="chatOn_icon">
-                    </div>
-                    <div class="name"> Chat </div>
-                </a>
-            </li>
-            <!-- Code for Cart Icon (Not Clicked) -->
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/cart_null.png" class="cartNull_icon">
-                        <img src="images/cart_coloured.png" class="cartOn_icon">
-                    </div>
-                    <div class="name"> Cart </div>
-                </a>
-            </li>
-            <!-- Code for Profile Icon (Not Clicked) -->
-            <li>
-                <a href="#">
-                    <div class="icon">
-                        <img src="images/profile_null.png" class="profileNull_icon">
-                        <img src="images/profile_coloured.png" class="profileOn_icon">
-                    </div>
-                    <div class="name"> Profile </div>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class = 'claw-main'>
-        <div class = 'claw-first-column'>
-            <button class = 'claw-available-rewards-btn'>Available Rewards</button>
-            <button class = 'claw-reward-history-btn'>Rewards History</button>
-            <button class = 'claw-quest-btn'>Quest</button>
+            <!-- Unordered List for Right Icons -->
+            <ul class="ul-icon">
+                <!-- Code for Sell Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/sell_null.png" class="sellNull_icon">
+                            <img src="images/sell_coloured.png" class="sellOn_icon">
+                        </div>
+                        <div class="name"> Sell </div>
+                    </a>
+                </li>
+                <!-- Code for Rewards Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/rewards_null.png" class="rewardsNull_icon">
+                            <img src="images/rewards_coloured.png" class="rewardsOn_icon">
+                        </div>
+                        <div class="name"> Rewards </div>
+                    </a>
+                </li>
+                <!-- Code for Quest Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/quest_null.png" class="questNull_icon">
+                            <img src="images/quest_coloured.png" class="questOn_icon">
+                        </div>
+                        <div class="name"> Quest </div>
+                    </a>
+                </li>
+                <!-- Code for Chat Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/chat_null.png" class="chatNull_icon">
+                            <img src="images/chat_coloured.png" class="chatOn_icon">
+                        </div>
+                        <div class="name"> Chat </div>
+                    </a>
+                </li>
+                <!-- Code for Cart Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/cart_null.png" class="cartNull_icon">
+                            <img src="images/cart_coloured.png" class="cartOn_icon">
+                        </div>
+                        <div class="name"> Cart </div>
+                    </a>
+                </li>
+                <!-- Code for Profile Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/profile_null.png" class="profileNull_icon">
+                            <img src="images/profile_coloured.png" class="profileOn_icon">
+                        </div>
+                        <div class="name"> Profile </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class = 'claw-main'>
+            <div class = 'claw-first-column'>
+                <button class = 'claw-available-rewards-btn'>Available Rewards</button>
+                <button class = 'claw-reward-history-btn'>Rewards History</button>
+                <button class = 'claw-quest-btn'>Quest</button>
+            </div>
+            <div class = 'claw-second-column'>
+                <button class =  'claw-model'><img src = 'images/claw_machine_screenshot.png' class = 'claw-machine-img'></button>
+                <button class = 'claw-play-button-btn'>Play</button>
+            </div>
+            <div class = 'claw-third-column'>
+                <button class = 'claw-collectibles-btn'>Collectibles</button>
+                <button class = 'claw-stamps-btn'>Stamps</button>
+                <div class = 'claw-set-complete'>Sets Completed
+                    <h2 class = 'num-set-complete'>2/4</h2>
+                </div>
+                <div class = 'claw-ticket'>
+                    <div>Tickets Left:<div>
+                        </div>0</div>
+                    <button class = 'buy-now-ticket'>Buy now</button>
+                </div> 
+            </div>
         </div>
-        <div class = 'claw-second-column'>
-            <button class =  'claw-model'><img src = 'images/claw_machine_screenshot.png' class = 'claw-machine-img'></button>
-            <button class = 'claw-play-button-btn'>Play</button>
-        </div>
-        <div class = 'claw-third-column'>
-            <button class = 'claw-collectibles-btn'>collectibles</button>
-            <button class = 'claw-stamps-btn'>Stamps</button>
-            <div class = 'claw-set-complete'>Sets Completed</div>
-            <div class = 'claw-ticket'>Tickets Left</div> 
-        </div>
-    </div>
-</body>
+    </body>
 </html>
