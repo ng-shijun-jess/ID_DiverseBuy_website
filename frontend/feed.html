@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Feed</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='feed.css'>
+
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- Heart Shape Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Half Star link -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- Full star link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class="lottie_container">
+        <lottie-player class="lottie_loading" src="https://assets2.lottiefiles.com/packages/lf20_t1ga2e1n.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+    </div>
+    
+    <!-- Container that wraps around all code -->
+    <div class="container">
+        <!-- Nav Bar -->
+        <nav>
+            <ul class="logo-search-filter">
+                <li class="logo_list">
+                    <a href="#">
+                        <div class="logo">
+                            <img src="images/diversebuy_logo.png" id="logo">
+                        </div>
+                    </a>
+                </li>
+                <li class="input_list">
+                    <!-- Code for Search Bar -->
+                    <a href="#">
+                        <div class="input-wrapper">
+                            <div class="fa fa-search"></div>
+                            <input type="text" placeholder="Search" class="search_bar_input" />
+                            <div class="fa fa-times"></div>
+                        </div>
+                    </a>
+                </li>
+                <li class="filter_list">
+                    <!-- Code for Search Filter (Not Clicked) -->
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/filter_null.png" class="filterNull_icon">
+                            <img src="images/filter_coloured.png" class="filterOn_icon">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Unordered List for Right Icons -->
+            <ul class="ul-icon">
+                <!-- Code for Sell Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/sell_null.png" class="sellNull_icon">
+                            <img src="images/sell_coloured.png" class="sellOn_icon">
+                        </div>
+                        <div class="name"> Sell </div>
+                    </a>
+                </li>
+                <!-- Code for Rewards Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/rewards_null.png" class="rewardsNull_icon">
+                            <img src="images/rewards_coloured.png" class="rewardsOn_icon">
+                        </div>
+                        <div class="name"> Rewards </div>
+                    </a>
+                </li>
+                <!-- Code for Quest Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/quest_null.png" class="questNull_icon">
+                            <img src="images/quest_coloured.png" class="questOn_icon">
+                        </div>
+                        <div class="name"> Quest </div>
+                    </a>
+                </li>
+                <!-- Code for Chat Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/chat_null.png" class="chatNull_icon">
+                            <img src="images/chat_coloured.png" class="chatOn_icon">
+                        </div>
+                        <div class="name"> Chat </div>
+                    </a>
+                </li>
+                <!-- Code for Cart Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/cart_null.png" class="cartNull_icon">
+                            <img src="images/cart_coloured.png" class="cartOn_icon">
+                        </div>
+                        <div class="name"> Cart </div>
+                    </a>
+                </li>
+                <!-- Code for Profile Icon (Not Clicked) -->
+                <li>
+                    <a href="#">
+                        <div class="icon">
+                            <img src="images/profile_null.png" class="profileNull_icon">
+                            <img src="images/profile_coloured.png" class="profileOn_icon">
+                        </div>
+                        <div class="name"> Profile </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- END OF NAV BAR CODE -->
+
+        <!-- Code for Announcements, claw machine, vouchers, order trackers-->
+        <!-- Container consisting of announcements, claw machine, vouchers, order tracker -->
+        <div class="top_container">
+            <div class="top_row1">  <!-- Consists of announcements, claw machine and vouchers -->
+                <div class="announcements_box">   
+                    <img src="images/announcements.png" class="announcements_pic">
+                </div>
+                <div class="claw_machine_box">
+                    <img src="images/claw_machine.png" class="claw_machine_pic">
+                </div>
+                <div class="voucher_box">
+                    <img src="images/voucher.png" class="voucher_pic">
+                </div>
+            </div>
+
+            <div class="top_row2">      <!-- Orders tracker box -->
+                <div class="orders_text_box">
+                    <p class="orders_text"> Orders/Parcel Tracker </p>
+                </div>
+
+                <div class="progress_box">      <!-- Progress box consists of 2 rows -->
+                    <div class="progress_top_row">
+                        <img src="images/box_icon_grey.png" class="box_icon_grey">
+                        <img src="images/grey_path.png" class="grey_path">
+                        <img src="images/delivering_icon_orange.png" class="delivering_icon_orange">
+                        <img src="images/orange_path.png" class="orange_path">
+                        <img src="images/order_completed_grey.png" class="order_completed_grey">
+                    </div>
+                    <p class="delivery_text"> Delivery in Progress </p>     <!-- sectionond Row -->
+                </div>
+
+                <div class="details_box">
+                    <p class="details_text"> View Details </p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Code for Announcements, claw machine, vouchers, order trackers-->
+
+        <!--  Code for products section -->
+        <!-- Large product container wraps around title and 8 large boxes -->
+        <div class="products_large_container">
+            <div class="products_section" id="promotion_section"> Promotions </div>
+            <!-- product Container wraps around all 8 large boxes -->
+                <div class="product_container" id="promotion_container">
+                    <div class="product_box" id="product_toprow">   <!-- Box storing image box and text box -->
+                        <img src="images/stickertape.png" class="stickertape"> <!-- Product Image -->   
+                        <div class="productbox_text">   <!-- Text Box below image -->
+                            <!-- First row of text consisting of like icon and like count -->
+                            <div class="productbox_row1">
+                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <div class="heartnumber"> 5 </div> <!-- like count -->
+                            </div>
+                            <p class="productbox_title"> 5cm wide decorative sticker tape </p>    <!-- Title -->
+                            <p class="productbox_price"> $1.35 </p>       <!-- Price -->
+                            <div class="productbox_rating">       <!-- Rating icons -->
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                            </div>
+                            <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                            <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                        </div>
+                    </div>
+
+                    <div class="product_box" id="product_toprow">   <!-- Box storing image box and text box -->
+                        <img src="images/rainbow_slime.png" class="rainbow_slime"> <!-- Product Image -->
+                        <div class="productbox_text">   <!-- Text Box below image -->
+                            <!-- First row of text consisting of like icon and like count -->
+                            <div class="productbox_row1">
+                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <div class="heartnumber"> 13 </div> <!-- like count -->
+                            </div>
+                            <p class="productbox_title"> Popular Rainbow Fluffy Slime </p>    <!-- Title -->
+                            <span class="productbox_price"> <span class="strikethrough_price"> $4-$7.88 </span> $2-$5.78 </span>       <!-- Price -->
+                            <div class="productbox_rating">       <!-- Rating icons -->
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                            </div>
+                            <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                            <p class="productbox_country"> Mainland China </p>     <!-- Country -->
+                        </div>
+                    </div>
+
+                    <div class="product_box" id="product_toprow" >  <!-- Box storing image box and text box -->
+                        <img src="images/petrock.png" class="petrock"> <!-- Product Image -->
+                        <div class="productbox_text">       <!-- Text Box below image -->
+                            <!-- First row of text consisting of like icon and like count -->
+                            <div class="productbox_row1">
+                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <div class="heartnumber"> 15 </div> <!-- like count -->
+                            </div>
+                            <p class="productbox_title" id="petrock_title"> Pet Rock </p>    <!-- Title -->
+                            <p class="productbox_price"> $0.05-$3.69 </p>       <!-- Price -->
+                            <div class="productbox_rating">       <!-- Rating icons -->
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                            </div>
+                            <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                            <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                        </div>
+                    </div>
+
+                    <div class="product_box" id="product_toprow" >     <!-- Box storing image box and text box -->
+                        <img src="images/fererorocher.png" class="stickertape"> <!-- Product Image -->
+                        <div class="productbox_text">   <!-- Text Box below image -->
+                            <!-- First row of text consisting of like icon and like count -->
+                            <div class="productbox_row1">
+                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <div class="heartnumber"> 13 </div> <!-- like count -->
+                            </div>
+                            <p class="productbox_title"> Ferero Rocher Fine- Hazelnut Chocolate.. </p>    <!-- Title -->
+                            <span class="productbox_price"> <span class="strikethrough_price"> $37.00 </span> $35.63 </span>       <!-- Price -->
+                            <div class="productbox_rating">       <!-- Rating icons -->
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                                <i class="fa fa-star" id="rating_star"></i>
+                            </div>
+                            <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                            <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF PROMOTIONS SECTION -->
+
+        <!--  START OF RECOMMENDED PRODUCTS SECTION -->
+        <!-- Large product container wraps around title and 8 large boxes -->
+        <div class="products_large_container">
+            <div class="products_section" id="recommended_products"> Products </div>
+            <!-- Product Container wraps around all 8 large boxes -->
+            <div class="product_container" id="recommended_products_container"> 
+                <div class="product_box" id="product_toprow"> <!-- Box storing image box and text box -->
+                    <img src="images/amongus_plush.png" class="amongus_plush"> <!-- Product Image -->
+                    <div class="productbox_text">   <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 69 </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title"> AMONG US CREW-MATE PLUSHY </p>    <!-- Title -->
+                        <span class="productbox_price"> <span class="strikethrough_price"> $7.50 </span> $6.00 </span>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>
+                </div>
+
+                <div class="product_box" id="product_toprow">   <!-- Box storing image box and text box -->
+                    <img src="images/amongus_fidget.png" class="amongus_fidget"> <!-- Product Image -->
+                    <div class="productbox_text">   <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 69 </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title"> Loliuicca Sensory- Fidget Toy </p>    <!-- Title -->
+                        <span class="productbox_price"> <span class="strikethrough_price"> $29.99 </span> $6.00 </span>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Mainland China </p>     <!-- Country -->
+                    </div>
+                </div>
+
+                <div class="product_box" id="product_toprow" >      <!-- Box storing image box and text box -->
+                    <img src="images/slime_plush.png" class="slime_plush"> <!-- Product Image -->
+
+                    <!-- Text Box below image -->
+                    <div class="productbox_text">
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 21 </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title"> Genshin Impact Slime Plushy </p>    <!-- Title -->
+                        <p class="productbox_price"> <span class="strikethrough_price"> $28.99 </span> $26.99 </p>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>
+                </div>
+
+                <div class="product_box" id="product_toprow" >      <!-- Box storing image box and text box -->
+                    <img src="images/guoba_pot.png" class="guoba_pot"> <!-- Product Image -->
+                    <div class="productbox_text">   <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 13 </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title"> Genshin Impact Guo Ba Bowl </p>    <!-- Title -->
+                        <span class="productbox_price"> <span class="strikethrough_price"> $69.99 </span> $65.99 </span>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>
+                </div>
+
+                <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
+                    <img src="images/rem_plush.png" class="rem_plush"> <!-- Product Image -->
+                    <div class="productbox_text">   <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 9K+ </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title" id="rem_title"> Cute Doggo Rem Plushy </p>    <!-- Title -->
+                        <p class="productbox_price"> $30 </p>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>    
+                </div>
+
+                <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
+                    <img src="images/dvalin_sticker.png" class="dvalin_sticker"> <!-- Product Image -->
+                    <div class="productbox_text">      <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 6K+ </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title" id="dvalin_title"> Dvalin Genshin Impact Sticker </p>    <!-- Title -->
+                        <p class="productbox_price"> $1.00 </p>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>    
+                </div>
+
+                <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
+                    <img src="images/zhongxina_tshirt.png" class="zhongxina_tshirt"> <!-- Product Image -->
+                    <div class="productbox_text">   <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 10K+ </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title" id="zhongxina_title"> Zhong Xina T-shirt </p>    <!-- Title -->
+                        <p class="productbox_price"> $15 </p>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>    
+                </div>
+
+                <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
+                    <img src="images/mirage_figure.png" class="mirage_figure"> <!-- Product Image -->   
+                    <div class="productbox_text">   <!-- Text Box below image -->
+                        <!-- First row of text consisting of like icon and like count -->
+                        <div class="productbox_row1">
+                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <div class="heartnumber"> 21 </div> <!-- like count -->
+                        </div>
+                        <p class="productbox_title" id="mirage_title"> Mirage Apex Legends Pillow </p>    <!-- Title -->
+                        <p class="productbox_price"> $20 </p>       <!-- Price -->
+                        <div class="productbox_rating">       <!-- Rating icons -->
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                            <i class="fa fa-star" id="rating_star"></i>
+                        </div>
+                        <p class="productbox_rating_text"> 5.0/5.0 </p>       <!-- Rating Text -->
+                        <p class="productbox_country"> Singapore </p>     <!-- Country -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='startpage.js'></script>
+</body>
+</html>
