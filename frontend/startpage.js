@@ -9,8 +9,8 @@ function openRegister(){
 }
 
 // Lottie animation disappears on page load
-let lottie_container = document.querySelector(".lottie_container")
-let lottie_loading = document.querySelector(".lottie_loading")
+let lottie_container = document.querySelector(".lottie_container");
+let lottie_loading = document.querySelector(".lottie_loading");
 
 window.addEventListener("load", function(){
     lottie_container.style.display = 'none';
@@ -18,3 +18,19 @@ window.addEventListener("load", function(){
     lottie_loading.style.display = "none";
     lottie_loading.style.opacity="0";
 })
+
+// Login fetch function
+async function login(){
+    console.warn(username, password);
+    let item = {username, password};
+    let result = await fetch("http://127.0.0.1:8000/users/", {
+        method: 'POST', 
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": 'application/json'
+        },
+        body:JSON.stringify(item)
+    });
+    result = await result.json();
+    localStorage.setItem(JSON.stringify(result))
+}
