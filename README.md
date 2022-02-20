@@ -1,4 +1,12 @@
 # IP-project
+
+
+DiverseBuy is an E-commerce Webiste that aims to diversify one's shopping experience by allowing shoppers to see what other people have to offer within the website, whether it is a merchandise for a favourite franchise or simply a good book.
+
+GITHUB: https://github.com/ng-shijun-jess/ID_DiverseBuy_website
+
+
+
 What the project does?
 This project is a simplified version of Shopee and other E-Commerce website, it's to show our idea for our IP project.
 
