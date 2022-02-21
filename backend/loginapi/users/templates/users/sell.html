@@ -1,0 +1,400 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'users/css/main.css' %}" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <style>
+      .sell-page-title {
+        margin: 50px;
+        text-align: center;
+      }
+      /* creating the aligning for the page title */
+
+      .photo-section {
+        margin-left: 60px;
+        color: grey;
+      }
+      /* the words are in grey */
+
+      .photo-section h2 {
+        margin-bottom: 10px;
+        color: black;
+      }
+      /* The add details */
+
+      #add-in-product-pic {
+        height: 130px;
+        width: 130px;
+        margin-right: 40px;
+      }
+      /* Making the size for pictures */
+
+      .sell-fill-in {
+        margin-left: 34%;
+        margin-right: 40%;
+      }
+
+      .product-quantity {
+        height: 30px;
+        display: flex;
+        width: 150px;
+        flex-direction: column;
+      }
+      /* the button fo the quantity */
+
+      .sell-quantity-btn {
+        display: flex;
+      }
+      /* makingg the = and - sign be besie the number input box */
+
+      #demoInput {
+        text-align: center;
+      }
+      /* Making the number in the center */
+      input[type="number"]::-webkit-inner-spin-button {
+        width: 12.5%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+      .sell-first-row,
+      .sell-second-row {
+        display: flex;
+        margin-top: 10px;
+        gap: 40px;
+        margin-bottom: 20px;
+      }
+
+      .product-title-sell,
+      .product-price-container,
+      .product-category-container,
+      .sell-product-details {
+        display: flex;
+        flex-direction: column;
+      }
+      .sell-product-details {
+        width: 485px;
+        height: 200px;
+      }
+
+      .sell-confirm {
+        border: 0;
+        padding: 20px;
+        width: 485px;
+        margin-top: 40px;
+        background: #ec691e;
+        outline: auto;
+        outline-style: round;
+        outline-color: #ec691e;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 40px;
+      }
+
+      @media (max-width: 1455px) {
+        #add-in-product-pic {
+          height: 110px;
+          width: 110px;
+          margin-right: 40px;
+        }
+      }
+      @media (max-width: 1295px) {
+        #add-in-product-pic {
+          height: 100px;
+          width: 100px;
+          margin-right: 30px;
+        }
+        .sell-fill-in {
+          margin-left: 30%;
+          margin-right: 40%;
+        }
+      }
+
+      @media (max-width: 1235px) {
+        #add-in-product-pic {
+          height: 80px;
+          width: 80px;
+          margin-right: 30px;
+        }
+        .sell-fill-in {
+          margin-left: 30%;
+          margin-right: 40%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #add-in-product-pic {
+          height: 90px;
+          width: 90px;
+          margin-right: 20px;
+        }
+        .sell-fill-in {
+          margin-left: 27%;
+          margin-right: 40%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class="lottie_container">
+      <lottie-player
+        class="lottie_loading"
+        src="https://assets2.lottiefiles.com/packages/lf20_t1ga2e1n.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+    <nav>
+      <ul class="logo-search-filter">
+        <li class="logo_list">
+          <a href="#">
+            <div class="logo">
+              <img
+                src="{% static 'users/images/diversebuy_logo.png' %}"
+                id="logo"
+              />
+            </div>
+          </a>
+        </li>
+        <li class="input_list">
+          <!-- Code for Search Bar -->
+          <a href="#">
+            <div class="input-wrapper">
+              <div class="fa fa-search"></div>
+              <input
+                type="text"
+                placeholder="Search"
+                class="search_bar_input"
+              />
+              <div class="fa fa-times"></div>
+            </div>
+          </a>
+        </li>
+        <li class="filter_list">
+          <!-- Code for Search Filter (Not Clicked) -->
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/filter_null.png' %}"
+                class="filterNull_icon"
+              />
+              <img
+                src="{% static 'users/images/filter_coloured.png' %}"
+                class="filterOn_icon"
+              />
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Unordered List for Right Icons -->
+      <ul class="ul-icon">
+        <!-- Code for Sell Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/sell_null.png' %}"
+                class="sellNull_icon"
+              />
+              <img
+                src="{% static 'users/images/sell_coloured.png' %}"
+                class="sellOn_icon"
+              />
+            </div>
+            <div class="name">Sell</div>
+          </a>
+        </li>
+        <!-- Code for Rewards Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/rewards_null.png' %}"
+                class="rewardsNull_icon"
+              />
+              <img
+                src="{% static 'users/images/rewards_coloured.png' %}"
+                class="rewardsOn_icon"
+              />
+            </div>
+            <div class="name">Rewards</div>
+          </a>
+        </li>
+        <!-- Code for Quest Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/quest_null.png' %}"
+                class="questNull_icon"
+              />
+              <img
+                src="{% static 'users/images/quest_coloured.png' %}"
+                class="questOn_icon"
+              />
+            </div>
+            <div class="name">Quest</div>
+          </a>
+        </li>
+        <!-- Code for Chat Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/chat_null.png' %}"
+                class="chatNull_icon"
+              />
+              <img
+                src="{% static 'users/images/chat_coloured.png' %}"
+                class="chatOn_icon"
+              />
+            </div>
+            <div class="name">Chat</div>
+          </a>
+        </li>
+        <!-- Code for Cart Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/cart_null.png' %}"
+                class="cartNull_icon"
+              />
+              <img
+                src="{% static 'users/images/cart_coloured.png' %}"
+                class="cartOn_icon"
+              />
+            </div>
+            <div class="name">Cart</div>
+          </a>
+        </li>
+        <!-- Code for Profile Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/profile_null.png' %}"
+                class="profileNull_icon"
+              />
+              <img
+                src="{% static 'users/images/profile_coloured.png' %}"
+                class="profileOn_icon"
+              />
+            </div>
+            <div class="name">Profile</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sell-page-title"><h1>Sell your Product</h1></div>
+    <div class="photo-section">
+      <h2>Add Details</h2>
+      Photo
+      <div class="pic-sell">
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+        <img
+          src="{% static 'users/images/empty.jpg' %}"
+          id="add-in-product-pic"
+        />
+      </div>
+      Tap to re-crop or edit
+    </div>
+    <div class="sell-fill-in">
+      <div class="sell-first-row">
+        <div class="product-title-sell">
+          Title
+          <input
+            type="text"
+            class="product-name-container"
+            placeholder="Name of your Product"
+          />
+        </div>
+
+        <div class="product-quantity">
+          <div class="quantity-space-sell">Quantity:</div>
+          <div class="sell-quantity-btn">
+            <button onclick="decrement()">-</button>
+            <input id="demoInput" type="number" min="0" max="9999" />
+            <button onclick="increment()">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="sell-second-row">
+        <div class="set-price">
+          Name your Price
+          <input type="text" class="product-price-container" placeholder="S$" />
+        </div>
+        <div class="set-price">
+          Category
+          <input
+            type="text"
+            class="product-category-container"
+            placeholder="eg. Toys"
+          />
+        </div>
+      </div>
+      <div class="sell-description">
+        Description (Optional)
+        <input type="text" class="sell-product-details" />
+      </div>
+      <button class="sell-confirm">Confirm</button>
+    </div>
+    <script
+      type="text/javascript"
+      src="{% static 'users/js/script.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'users/js/script2.js' %}"
+    ></script>
+  </body>
+</html>
