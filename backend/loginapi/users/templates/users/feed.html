@@ -3,17 +3,18 @@
 {% block content %}
     <!-- Code for Announcements, claw machine, vouchers, order trackers-->
         <!-- Container consisting of announcements, claw machine, vouchers, order tracker -->
-        <link rel="stylesheet" href="{% static 'css/feed.css' %}"
+        <link rel="stylesheet" href="{% static 'users/css/feed.css' %}">
+        <script type = "text/javascript" src="{% static 'users/js/startpage.js' %}"></script> 
         <div class="top_container">
             <div class="top_row1">  <!-- Consists of announcements, claw machine and vouchers -->
                 <div class="announcements_box">   
-                    <img src="images/announcements.png" class="announcements_pic">
+                    <img src="{% static 'users/images/announcements.png' %}" class="announcements_pic">
                 </div>
                 <div class="claw_machine_box">
-                    <img src="images/claw_machine.png" class="claw_machine_pic">
+                    <img src="{% static 'users/images/claw_machine.png' %}" class="claw_machine_pic">
                 </div>
                 <div class="voucher_box">
-                    <img src="images/voucher.png" class="voucher_pic">
+                    <img src="{% static 'users/images/voucher.png' %}" class="voucher_pic">
                 </div>
             </div>
 
@@ -24,11 +25,11 @@
 
                 <div class="progress_box">      <!-- Progress box consists of 2 rows -->
                     <div class="progress_top_row">
-                        <img src="images/box_icon_grey.png" class="box_icon_grey">
-                        <img src="images/grey_path.png" class="grey_path">
-                        <img src="images/delivering_icon_orange.png" class="delivering_icon_orange">
-                        <img src="images/orange_path.png" class="orange_path">
-                        <img src="images/order_completed_grey.png" class="order_completed_grey">
+                        <img src="{% static 'users/images/box_icon_grey.png' %}" class="box_icon_grey">
+                        <img src="{% static 'users/images/grey_path.png' %}" class="grey_path">
+                        <img src="{% static 'users/images/delivering_icon_orange.png' %}" class="delivering_icon_orange">
+                        <img src="{% static 'users/images/orange_path.png' %}" class="orange_path">
+                        <img src="{% static 'users/images/order_completed_grey.png' %}" class="order_completed_grey">
                     </div>
                     <p class="delivery_text"> Delivery in Progress </p>     <!-- sectionond Row -->
                 </div>
@@ -47,11 +48,11 @@
             <!-- product Container wraps around all 8 large boxes -->
                 <div class="product_container" id="promotion_container">
                     <div class="product_box" id="product_toprow">   <!-- Box storing image box and text box -->
-                        <img src="images/stickertape.png" class="stickertape"> <!-- Product Image -->   
+                        <img src="{% static 'users/images/stickertape.png' %}" class="stickertape"> <!-- Product Image -->   
                         <div class="productbox_text">   <!-- Text Box below image -->
                             <!-- First row of text consisting of like icon and like count -->
                             <div class="productbox_row1">
-                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                                 <div class="heartnumber"> 5 </div> <!-- like count -->
                             </div>
                             <p class="productbox_title"> 5cm wide decorative sticker tape </p>    <!-- Title -->
@@ -69,11 +70,11 @@
                     </div>
 
                     <div class="product_box" id="product_toprow">   <!-- Box storing image box and text box -->
-                        <img src="images/rainbow_slime.png" class="rainbow_slime"> <!-- Product Image -->
+                        <img src="{% static 'users/images/rainbow_slime.png' %}" class="rainbow_slime"> <!-- Product Image -->
                         <div class="productbox_text">   <!-- Text Box below image -->
                             <!-- First row of text consisting of like icon and like count -->
                             <div class="productbox_row1">
-                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                                 <div class="heartnumber"> 13 </div> <!-- like count -->
                             </div>
                             <p class="productbox_title"> Popular Rainbow Fluffy Slime </p>    <!-- Title -->
@@ -91,11 +92,11 @@
                     </div>
 
                     <div class="product_box" id="product_toprow" >  <!-- Box storing image box and text box -->
-                        <img src="images/petrock.png" class="petrock"> <!-- Product Image -->
+                        <img src="{% static 'users/images/petrock.png' %}" class="petrock"> <!-- Product Image -->
                         <div class="productbox_text">       <!-- Text Box below image -->
                             <!-- First row of text consisting of like icon and like count -->
                             <div class="productbox_row1">
-                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                                 <div class="heartnumber"> 15 </div> <!-- like count -->
                             </div>
                             <p class="productbox_title" id="petrock_title"> Pet Rock </p>    <!-- Title -->
@@ -113,11 +114,11 @@
                     </div>
 
                     <div class="product_box" id="product_toprow" >     <!-- Box storing image box and text box -->
-                        <img src="images/fererorocher.png" class="stickertape"> <!-- Product Image -->
+                        <img src="{% static 'users/images/fererorocher.png' %}" class="stickertape"> <!-- Product Image -->
                         <div class="productbox_text">   <!-- Text Box below image -->
                             <!-- First row of text consisting of like icon and like count -->
                             <div class="productbox_row1">
-                                <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                                <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                                 <div class="heartnumber"> 13 </div> <!-- like count -->
                             </div>
                             <p class="productbox_title"> Ferero Rocher Fine- Hazelnut Chocolate.. </p>    <!-- Title -->
@@ -145,11 +146,11 @@
             <!-- Product Container wraps around all 8 large boxes -->
             <div class="product_container" id="recommended_products_container"> 
                 <div class="product_box" id="product_toprow"> <!-- Box storing image box and text box -->
-                    <img src="images/amongus_plush.png" class="amongus_plush"> <!-- Product Image -->
+                    <img src="{% static 'users/images/amongus_plush.png' %}" class="amongus_plush"> <!-- Product Image -->
                     <div class="productbox_text">   <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 69 </div> <!-- like count -->
                         </div>
                         <p class="productbox_title"> AMONG US CREW-MATE PLUSHY </p>    <!-- Title -->
@@ -167,11 +168,11 @@
                 </div>
 
                 <div class="product_box" id="product_toprow">   <!-- Box storing image box and text box -->
-                    <img src="images/amongus_fidget.png" class="amongus_fidget"> <!-- Product Image -->
+                    <img src="{% static 'users/images/amongus_fidget.png' %}" class="amongus_fidget"> <!-- Product Image -->
                     <div class="productbox_text">   <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 69 </div> <!-- like count -->
                         </div>
                         <p class="productbox_title"> Loliuicca Sensory- Fidget Toy </p>    <!-- Title -->
@@ -189,13 +190,13 @@
                 </div>
 
                 <div class="product_box" id="product_toprow" >      <!-- Box storing image box and text box -->
-                    <img src="images/slime_plush.png" class="slime_plush"> <!-- Product Image -->
+                    <img src="{% static 'users/images/slime_plush.png' %}" class="slime_plush"> <!-- Product Image -->
 
                     <!-- Text Box below image -->
                     <div class="productbox_text">
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 21 </div> <!-- like count -->
                         </div>
                         <p class="productbox_title"> Genshin Impact Slime Plushy </p>    <!-- Title -->
@@ -213,11 +214,11 @@
                 </div>
 
                 <div class="product_box" id="product_toprow" >      <!-- Box storing image box and text box -->
-                    <img src="images/guoba_pot.png" class="guoba_pot"> <!-- Product Image -->
+                    <img src="{% static 'users/images/guoba_pot.png' %}" class="guoba_pot"> <!-- Product Image -->
                     <div class="productbox_text">   <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 13 </div> <!-- like count -->
                         </div>
                         <p class="productbox_title"> Genshin Impact Guo Ba Bowl </p>    <!-- Title -->
@@ -235,11 +236,11 @@
                 </div>
 
                 <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
-                    <img src="images/rem_plush.png" class="rem_plush"> <!-- Product Image -->
+                    <img src="{% static 'users/images/rem_plush.png' %}" class="rem_plush"> <!-- Product Image -->
                     <div class="productbox_text">   <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 9K+ </div> <!-- like count -->
                         </div>
                         <p class="productbox_title" id="rem_title"> Cute Doggo Rem Plushy </p>    <!-- Title -->
@@ -257,11 +258,11 @@
                 </div>
 
                 <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
-                    <img src="images/dvalin_sticker.png" class="dvalin_sticker"> <!-- Product Image -->
+                    <img src="{% static 'users/images/dvalin_sticker.png' %}" class="dvalin_sticker"> <!-- Product Image -->
                     <div class="productbox_text">      <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 6K+ </div> <!-- like count -->
                         </div>
                         <p class="productbox_title" id="dvalin_title"> Dvalin Genshin Impact Sticker </p>    <!-- Title -->
@@ -279,11 +280,11 @@
                 </div>
 
                 <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
-                    <img src="images/zhongxina_tshirt.png" class="zhongxina_tshirt"> <!-- Product Image -->
+                    <img src="{% static 'users/images/zhongxina_tshirt.png' %}" class="zhongxina_tshirt"> <!-- Product Image -->
                     <div class="productbox_text">   <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 10K+ </div> <!-- like count -->
                         </div>
                         <p class="productbox_title" id="zhongxina_title"> Zhong Xina T-shirt </p>    <!-- Title -->
@@ -301,11 +302,11 @@
                 </div>
 
                 <div class="product_box" id="product_bottomrow">    <!-- Box storing image box and text box -->
-                    <img src="images/mirage_figure.png" class="mirage_figure"> <!-- Product Image -->   
+                    <img src="{% static 'users/images/mirage_figure.png' %}" class="mirage_figure"> <!-- Product Image -->   
                     <div class="productbox_text">   <!-- Text Box below image -->
                         <!-- First row of text consisting of like icon and like count -->
                         <div class="productbox_row1">
-                            <img src="images/heart_null.png" class="heartnull_icon">    <!-- like icon -->
+                            <img src="{% static 'users/images/heart_null.png' %}" class="heartnull_icon">    <!-- like icon -->
                             <div class="heartnumber"> 21 </div> <!-- like count -->
                         </div>
                         <p class="productbox_title" id="mirage_title"> Mirage Apex Legends Pillow </p>    <!-- Title -->

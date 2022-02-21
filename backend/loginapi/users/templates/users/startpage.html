@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,10 +6,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Start Page</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='feed.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'users/css/feed.css' %}">
 </head>
+{% load crispy_forms_tags %}
 <body class="body_startpage">
     <!-- Lottie animation -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -19,16 +21,18 @@
     <!-- Inner box (contains Start_option_box and ) -->
     <div class="start_container">
         <div class="start_background_box">  <!-- Box for background image -->
-            <img class="start_background" src="images/IP_DiverseBuy_StartPage_V2.png">
+            <img class="start_background" src="{% static 'users/images/IP_DiverseBuy_StartPage_V2.png' %}">
         </div>
 
         <!-- Box containing inputs and buttons -->
             <div class="start_option_box">
                 <div class="button_box" id="rotatebox">    <!-- Inner content box -->
                     <div class="signup_page">  <!-- Signup side (2nd page after rotating) -->
-                        <img src="images/diversebuy_logo.png" class="logo_startpage">
+                        <img src="{% static 'users/images/diversebuy_logo.png' %}" class="logo_startpage">
                         <h2> REGISTER </h2>     <!-- Title -->
-                        <form>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            {{form|crispy}}
                             <input type="name" class="form-input-box" placeholder="Enter Username" required>
                             <input type="email" class="form-input-box" placeholder="Your Email" required>
                             <input type="password" class="form-input-box" placeholder="Password" required>
@@ -40,13 +44,14 @@
                     </div>
 
                     <div class="login_page">    <!-- Login side (1 first page before rotating) -->
-                        <img src="images/diversebuy_logo.png" class="logo_startpage">
+                        <img src= "{% static 'users/images/diversebuy_logo.png' %}" class="logo_startpage">
                         <h2> LOGIN </h2>
-                        <form>
+                        <form action="" method="POST">
+                            {% csrf_token %}
                             <input type="name" class="form-input-box" placeholder="Username" required>
                             <input type="password" class="form-input-box" placeholder="Password" required>
                             <input type="checkbox"><span class="rememberme"> Remember Me </span>
-                            <button type="submit" class="submit-btn" onclick="login()"> Submit </button>
+                            <button type="submit" class="submit-btn"> Submit </button>
                         </form>
                         <button type="button" class="btn" onclick="openRegister()"> I'm New Here </button>
                         <a href=""> Forgot Password </a>
@@ -56,6 +61,6 @@
             </div>
         </div>
     </div>
-    <script src='startpage.js'></script>
+    <script type = "text/javascript" src="{% static 'users/js/startpage.js' %}"></script> 
 </body>
 </html>
