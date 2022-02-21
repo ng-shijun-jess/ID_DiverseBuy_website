@@ -1,0 +1,376 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DiverseBuy Profile Page</title>
+    <link rel="stylesheet" href="{% static 'users/css/main.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="logo-search-filter">
+          <li class="logo_list">
+            <a href="../feed">
+              <div class="logo">
+                <img
+                  src="{% static 'users/images/diversebuy_logo.png' %}"
+                  id="logo"
+                />
+              </div>
+            </a>
+          </li>
+          <li class="input_list">
+            <!-- Code for Search Bar -->
+            <a href="#">
+              <div class="input-wrapper">
+                <div class="fa fa-search"></div>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  class="search_bar_input"
+                />
+                <div class="fa fa-times"></div>
+              </div>
+            </a>
+          </li>
+          <li class="filter_list">
+            <!-- Code for Search Filter (Not Clicked) -->
+            <a href="#">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/filter_null.png' %}"
+                  class="filterNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/filter_coloured.png' %}"
+                  class="filterOn_icon"
+                />
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Unordered List for Right Icons -->
+        <ul class="ul-icon">
+          <!-- Code for Sell Icon (Not Clicked) -->
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/sell_null.png' %}"
+                  class="sellNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/sell_coloured.png' %}"
+                  class="sellOn_icon"
+                />
+              </div>
+              <div class="name">Sell</div>
+            </a>
+          </li>
+          <!-- Code for Rewards Icon (Not Clicked) -->
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/rewards_null.png' %}"
+                  class="rewardsNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/rewards_coloured.png' %}"
+                  class="rewardsOn_icon"
+                />
+              </div>
+              <div class="name">Rewards</div>
+            </a>
+          </li>
+          <!-- Code for Quest Icon (Not Clicked) -->
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/quest_null.png' %}"
+                  class="questNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/quest_coloured.png' %}"
+                  class="questOn_icon"
+                />
+              </div>
+              <div class="name">Quest</div>
+            </a>
+          </li>
+          <!-- Code for Chat Icon (Not Clicked) -->
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/chat_null.png' %}"
+                  class="chatNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/chat_coloured.png' %}"
+                  class="chatOn_icon"
+                />
+              </div>
+              <div class="name">Chat</div>
+            </a>
+          </li>
+          <!-- Code for Cart Icon (Not Clicked) -->
+          <li>
+            <a href="../shoppingcart">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/cart_null.png' %}"
+                  class="cartNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/cart_coloured.png' %}"
+                  class="cartOn_icon"
+                />
+              </div>
+              <div class="name">Cart</div>
+            </a>
+          </li>
+          <!-- Code for Profile Icon (Not Clicked) -->
+          <li>
+            <a href="#">
+              <div class="icon">
+                <img
+                  src="{% static 'users/images/profile_null.png' %}"
+                  class="profileNull_icon"
+                />
+                <img
+                  src="{% static 'users/images/profile_coloured.png' %}"
+                  class="profileOn_icon"
+                />
+              </div>
+              <div class="name">Profile</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- END OF NAV BAR CODE -->
+      <div class="profile-banner">
+        <p class="banner-link">Banner</p>
+      </div>
+      <div class="profile-img">
+        <img src="{% static 'users/images/profile_placeholder.png' %}" />
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="profile-info">
+          <h1 class="username">Alan Becker</h1>
+          <div class="title">
+            <h2><i>Seller</i></h2>
+          </div>
+          <div class="joined-status">Joined 2 yrs ago</div>
+          <div class="user-ratings">
+            <div class="stars">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <span> 5/5 </span>
+            </div>
+          </div>
+          <div class="address">
+            <p class="state">Singapore, Singapore</p>
+          </div>
+          <div class="profile-btn">
+            <div class="left-side">
+              <button class="quest-btn">Quest</button>
+              <button class="voucher-btn">Vouchers</button>
+              <button class="collection-btn">Collection</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="badge-display">
+          <h1>Badges</h1>
+          <ul class="badges">
+            <li class="individual-badges">
+              <img
+                src="{% static 'users.images/Collection Badges_badge Collection- Octopus.png' %}"
+              />
+            </li>
+            <li class="individual-badges">
+              <img
+                src="{% static 'users/images/Collection Badges_Collection Badge- Among us.png' %}"
+              />
+            </li>
+            <li class="individual-badges">
+              <img
+                src="{% static 'users/images/Collection Badges_Collection Badge- best seller.png' %}"
+              />
+            </li>
+            <li class="individual-badges">
+              <img
+                src="{% static 'users/images/Collection Badges_Collection Badge-the viewer.png' %}"
+              />
+            </li>
+            <li class="individual-badges">
+              <img
+                src="{% static 'users/images/Collection Badges_Collection Badge-2 Years.png' %}"
+              />
+            </li>
+          </ul>
+        </div>
+        <button class="view-badges-all">View All</button>
+        <div class="nav">
+          <ul>
+            <li onclick="tabs(0)" class="user-listings active">Listings</li>
+            <li onclick="tabs(1)" class="user-reviews">Reviews</li>
+            <li onclick="tabs(2)" class="user-about">About</li>
+            <li onclick="tabs(3)" class="user-streams">Streams</li>
+            <li onclick="tabs(4)" class="user-orders">Orders</li>
+            <li onclick="tabs(5)" class="user-saved-products">
+              Saved Products
+            </li>
+          </ul>
+        </div>
+        <div class="profile-body">
+          <div class="profile-listings tab">
+            <div class="product-list">
+              <div class="product">
+                <img src="{% static 'users/images/amongus_all01_400x.jpg' %}" />
+                <div class="product-detail">
+                  <i class="far fa-heart"></i> 17
+                  <span class="product-name">Among Us: Crewmate Plushies</span>
+                  <div class="prices">
+                    <span class="original-price">$7.50</span>
+                    <span class="discounted-price">$6.00</span>
+                  </div>
+                  <div class="product-rating">
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="location">Malaysia</div>
+                </div>
+              </div>
+              <div class="product2">
+                <img src="{% static 'users/images/fidget pop toy.jpg' %}" />
+                <div class="product-detail">
+                  <i class="far fa-heart"></i> 21
+                  <span class="product-name"
+                    >Loliuicca Sensory-fidget toys</span
+                  >
+                  <div class="prices">
+                    <span class="discounted-price">$1.38 ~ $10.99</span>
+                  </div>
+                  <div class="product-rating">
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="location">Mainland China</div>
+                </div>
+              </div>
+              <div class="product3">
+                <img
+                  src="{% static 'users/images/among-us-crewmates-5-pack-mini-figures-510x510.jpg' %}"
+                />
+                <div class="product-detail">
+                  <i class="far fa-heart"></i> 103
+                  <span class="product-name"
+                    >Among Us: collectible crewmate figures
+                  </span>
+                  <div class="prices">
+                    <span class="original-price">$10.99</span>
+                    <span class="discounted-price">$9.99</span>
+                  </div>
+                  <div class="product-rating">
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="location">Singapore</div>
+                </div>
+              </div>
+              <div class="product4">
+                <img
+                  src="{% static 'users/images/Among us colouring book.jpg' %}"
+                />
+                <div class="product-detail">
+                  <i class="far fa-heart"></i> 7
+                  <span class="product-name"
+                    >Among Us Coloring Book:Coloring Book for Adult</span
+                  >
+                  <div class="prices">
+                    <span class="original-price">$19.82</span>
+                    <span class="discounted-price">$17.00</span>
+                  </div>
+                  <div class="product-rating">
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star checked"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <div class="location">Malaysia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review tab">
+            <div class="review-status">
+              You currently do not have any reviews
+            </div>
+          </div>
+          <div class="about tab">
+            <div class="about-status">
+              You currently do not have anything in your bio
+            </div>
+          </div>
+          <div class="streams tab">
+            <div class="stream-status">
+              You currently do not have any streams
+            </div>
+          </div>
+          <div class="orders tab">
+            <div class="order-status">You currently do not have any orders</div>
+          </div>
+          <div class="saved-products tab">
+            <div class="saved-product-status">
+              You currently do not have any saved products
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="{% static 'users/js/script.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'users/js/script2.js' %}"
+    ></script>
+  </body>
+</html>

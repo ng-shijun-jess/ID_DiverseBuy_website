@@ -1,0 +1,238 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="{% static 'users/css/main.css' %}" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav>
+      <ul class="logo-search-filter">
+        <li class="logo_list">
+          <a href="../feed">
+            <div class="logo">
+              <img
+                src="{% static 'users/images/diversebuy_logo.png' %}"
+                id="logo"
+              />
+            </div>
+          </a>
+        </li>
+        <li class="input_list">
+          <!-- Code for Search Bar -->
+          <a href="#">
+            <div class="input-wrapper">
+              <div class="fa fa-search"></div>
+              <input
+                type="text"
+                placeholder="Search"
+                class="search_bar_input"
+              />
+              <div class="fa fa-times"></div>
+            </div>
+          </a>
+        </li>
+        <li class="filter_list">
+          <!-- Code for Search Filter (Not Clicked) -->
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/filter_null.png' %}"
+                class="filterNull_icon"
+              />
+              <img
+                src="{% static 'users/images/filter_coloured.png' %}"
+                class="filterOn_icon"
+              />
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Unordered List for Right Icons -->
+      <ul class="ul-icon">
+        <!-- Code for Sell Icon (Not Clicked) -->
+        <li>
+          <a href="../sell">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/sell_null.png' %}"
+                class="sellNull_icon"
+              />
+              <img
+                src="{% static 'users/images/sell_coloured.png' %}"
+                class="sellOn_icon"
+              />
+            </div>
+            <div class="name">Sell</div>
+          </a>
+        </li>
+        <!-- Code for Rewards Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/rewards_null.png' %}"
+                class="rewardsNull_icon"
+              />
+              <img
+                src="{% static 'users/images/rewards_coloured.png' %}"
+                class="rewardsOn_icon"
+              />
+            </div>
+            <div class="name">Rewards</div>
+          </a>
+        </li>
+        <!-- Code for Quest Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/quest_null.png' %}"
+                class="questNull_icon"
+              />
+              <img
+                src="{% static 'users/images/quest_coloured.png' %}"
+                class="questOn_icon"
+              />
+            </div>
+            <div class="name">Quest</div>
+          </a>
+        </li>
+        <!-- Code for Chat Icon (Not Clicked) -->
+        <li>
+          <a href="#">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/chat_null.png' %}"
+                class="chatNull_icon"
+              />
+              <img
+                src="{% static 'users/images/chat_coloured.png' %}"
+                class="chatOn_icon"
+              />
+            </div>
+            <div class="name">Chat</div>
+          </a>
+        </li>
+        <!-- Code for Cart Icon (Not Clicked) -->
+        <li>
+          <a href="../shoppingcart">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/cart_null.png' %}"
+                class="cartNull_icon"
+              />
+              <img
+                src="{% static 'users/images/cart_coloured.png' %}"
+                class="cartOn_icon"
+              />
+            </div>
+            <div class="name">Cart</div>
+          </a>
+        </li>
+        <!-- Code for Profile Icon (Not Clicked) -->
+        <li>
+          <a href="../profile">
+            <div class="icon">
+              <img
+                src="{% static 'users/images/profile_null.png' %}"
+                class="profileNull_icon"
+              />
+              <img
+                src="{% static 'users/images/profile_coloured.png' %}"
+                class="profileOn_icon"
+              />
+            </div>
+            <div class="name">Profile</div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- END OF NAV BAR CODE -->
+
+    <div class="cart-title"><b>Shopping Cart</b></div>
+    <div class="product-selection">
+      <a href="" class="select-all-cart">Select All</a>
+      <a href="" class="select-cart">Select</a>
+    </div>
+    <div class="product-cart-row">
+      <div>
+        <img
+          src="{% static 'users/images/guoba_pot.png' %}"
+          class="guoba-pic"
+        />
+      </div>
+      <div class="cart-right-side">
+        <div class="cart-details">
+          <div class="cart-first-row">
+            <b>Genshin Impact Guoba Ramen Bowl</b>
+            <i class="far fa-heart" id="cart-like"></i> <b>13</b>
+            <div class="guoba-stocks-quantity"><b>Remaining stocks: 5</b></div>
+          </div>
+          <div class="cart-second-row">
+            <img
+              src="{% static 'users/images/maxresdefault.jpg' %}"
+              class="max-profile-pp"
+            />
+            <div class="cart-user-info">
+              <div class="username"><b>Username: </b>CoryxKenshin</div>
+              <div class="product-rating-cart">
+                <b>Product rating:</b>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <div><b>Reputation:</b> Lvl 1</div>
+            </div>
+            <div class="cart-final-row">
+              <div class="item-selection-cart">Selected: A</div>
+              <div class="additional-rewards">
+                Additional Rewards: 1 tickets, 2 coins
+              </div>
+              <div class="total-cost-cart">Total: $30</div>
+            </div>
+            <div class="cart-product-buttons">
+              <button class="more-info-btn">More info</button>
+              <button class="buy-now-btn">Buy now</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-quantity">
+          <div class="quantity-space-cart">Quantity:</div>
+          <button onclick="decrement()">-</button>
+          <input id="demoInput" type="number" min="0" max="5" />
+          <button onclick="increment()">+</button>
+        </div>
+      </div>
+    </div>
+    <button class="to-payment-btn">Go to Payment</button>
+    <script
+      type="text/javascript"
+      src="{% static 'users/js/script.js' %}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{% static 'users/js/script2.js' %}"
+    ></script>
+  </body>
+</html>
