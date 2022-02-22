@@ -2,17 +2,22 @@
 <html>
     <head>
         <title>DiverseBuy Profile Page</title>
-        <link rel="stylesheet" href='current.css' type= 'text/css'>
+        <link rel="stylesheet" href='main.css' type= 'text/css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- Lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div class="lottie_container">
+        <lottie-player class="lottie_loading" src="https://assets2.lottiefiles.com/packages/lf20_t1ga2e1n.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
+    </div>
         <header>
             <nav>
                 <ul class="logo-search-filter">
                     <li class="logo_list">
-                        <a href="#">
+                        <a href="feed.html">
                             <div class="logo">
                                 <img src="images/diversebuy_logo.png" id="logo">
                             </div>
@@ -43,7 +48,7 @@
                 <ul class="ul-icon">
                     <!-- Code for Sell Icon (Not Clicked) -->
                     <li>
-                        <a href="Sell page.html">
+                        <a href="sell.html">
                             <div class="icon">
                                 <img src="images/sell_null.png" class="sellNull_icon">
                                 <img src="images/sell_coloured.png" class="sellOn_icon">
@@ -63,7 +68,7 @@
                     </li>
                     <!-- Code for Quest Icon (Not Clicked) -->
                     <li>
-                        <a href="Quest page.html">
+                        <a href="quest.html">
                             <div class="icon">
                                 <img src="images/quest_null.png" class="questNull_icon">
                                 <img src="images/quest_coloured.png" class="questOn_icon">
@@ -83,7 +88,7 @@
                     </li>
                     <!-- Code for Cart Icon (Not Clicked) -->
                     <li>
-                        <a href="current shopping cart.html">
+                        <a href="cart.html">
                             <div class="icon">
                                 <img src="images/cart_null.png" class="cartNull_icon">
                                 <img src="images/cart_coloured.png" class="cartOn_icon">
@@ -93,7 +98,7 @@
                     </li>
                     <!-- Code for Profile Icon (Not Clicked) -->
                     <li>
-                        <a href="current profile.html">
+                        <a href="profile.html">
                             <div class="icon">
                                 <img src="images/profile_null.png" class="profileNull_icon">
                                 <img src="images/profile_coloured.png" class="profileOn_icon">
@@ -276,6 +281,7 @@
         </main>
     
 
-        <script src = 'IPjs.js'></script>
+        <script src = 'script.js'></script>
+        <script src="script2.js"></script>
     </body>
 </html>

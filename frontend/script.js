@@ -1,3 +1,4 @@
+// START OF JESS JAVASCRIPT
 $('.nav ul li').click(function() {
     $(this).addClass("active").siblings().removeClass("active");
 })
@@ -19,5 +20,6 @@ function increment() {
     document.getElementById('demoInput').stepDown();
  }
 
+// END OF JESS JAVASCRIPT
 
  

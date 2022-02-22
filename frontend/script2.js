@@ -19,18 +19,3 @@ window.addEventListener("load", function(){
     lottie_loading.style.opacity="0";
 })
 
-// Login fetch function
-async function login(){
-    console.warn(username, password);
-    let item = {username, password};
-    let result = await fetch("http://127.0.0.1:8000/users/", {
-        method: 'POST', 
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": 'application/json'
-        },
-        body:JSON.stringify(item)
-    });
-    result = await result.json();
-    localStorage.setItem(JSON.stringify(result))
-}
